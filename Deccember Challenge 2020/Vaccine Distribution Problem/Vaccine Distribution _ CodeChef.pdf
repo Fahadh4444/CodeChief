@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://www.codechef.com/DEC20B/problems/VACCINE2 -->
+<html lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <style>
+    .tokenForContest {
+      width: 150px;
+      margin:0 auto;
+      text-align: center;
+    }
+    .text-center{
+      text-align: center;
+    }
+  </style>
+  <script id="twitter-wjs" src="./Vaccine Distribution _ CodeChef_files/widgets.js.download"></script><script src="./Vaccine Distribution _ CodeChef_files/4e7c8fce06a9ab05530008e5.js.download" async=""></script><script src="./Vaccine Distribution _ CodeChef_files/sdk.js.download" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="./Vaccine Distribution _ CodeChef_files/atrk.js.download"></script><script type="text/javascript" async="" src="./Vaccine Distribution _ CodeChef_files/ga.js.download"></script><script id="facebook-jssdk" src="./Vaccine Distribution _ CodeChef_files/sdk.js(1).download"></script><script async="" src="./Vaccine Distribution _ CodeChef_files/fbevents.js.download"></script><script async="" src="./Vaccine Distribution _ CodeChef_files/gtm.js.download"></script><script type="text/x-mathjax-config;executed=true">
+    MathJax.Hub.Config({
+      "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+      },
+      ShowMathMenu: false,
+      TeX: {
+        extensions: ["color.js"],
+        noUndefined: {
+          attributes: {
+            mathcolor: "red",
+            mathbackground: "#FFEEEE",
+            mathsize: "90%"
+          }
+        },
+        Macros: { href: "{}" }
+      },
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [ ["$$","$$"], ["\\[", "\\]"] ],
+        multiline: true,
+        processEscapes: true,
+        ignoreClass: "[a-zA-Z1-9]*",
+        processClass: "mathjax-support"
+      },
+      menuSettings: {
+        context: "Browser"
+      },
+      messageStyle: "none"
+    });
+    </script>
+
+
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TV5X2M');
+        </script>
+    <!-- End Google Tag Manager -->
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2444182835820350');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1"
+         src="https://www.facebook.com/tr?id=2444182835820350&ev=PageView
+&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+
+  <script type="text/javascript" src="./Vaccine Distribution _ CodeChef_files/MathJax.js.download">
+  </script>
+
+  <script type="text/javascript" src="./Vaccine Distribution _ CodeChef_files/showdown-1.8.6.min.js.download">
+  </script>
+  <script>
+    (function (_, e, rr, s) {
+      _errs = [s];
+      var c = _.onerror;
+      _.onerror = function () {
+        var a = arguments;
+        _errs.push(a);
+        c && c.apply(this, a)
+      };
+      var b = function () {
+        var c = e.createElement(rr),
+                b = e.getElementsByTagName(rr)[0];
+        c.src = "//beacon.errorception.com/" + s + ".js";
+        c.async = !0;
+        b.parentNode.insertBefore(c, b)
+      };
+      _.addEventListener ? _.addEventListener("load", b, !1) : _.attachEvent("onload", b)
+    })
+    (window, document, "script", "4e7c8fce06a9ab05530008e5");
+  </script>
+  <link rel="dns-prefetch" href="https://codechef_shared.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://beacon.errorception.com/">
+  <link rel="dns-prefetch" href="https://static.ak.facebook.com/">
+  <link rel="dns-prefetch" href="https://fbcdn-profile-a.akamaihd.net/">
+  <script type="text/javascript">
+    var _sf_startpt = (new Date()).getTime()
+  </script>
+  <title>Vaccine Distribution | CodeChef</title>
+  
+  <meta name="keywords" content="programming, language, algorithm, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM">
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="https://www.codechef.com/misc/favicon.ico" type="image/x-icon">
+  <script src="./Vaccine Distribution _ CodeChef_files/platform.js.download" async="" defer="" gapi_processed="true"></script>
+  <script src="./Vaccine Distribution _ CodeChef_files/remove_prototype.js.download"></script>
+  <script src="./Vaccine Distribution _ CodeChef_files/contest-problem.js.download"></script>
+  <link rel="stylesheet" href="./Vaccine Distribution _ CodeChef_files/contest-problem.css">
+  <link rel="canonical" href="https://www.codechef.com/DEC20B"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">:root topadblock, :root script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content, :root input[onclick^="window.open('http://www.FriendlyDuck.com/"], :root img[alt^="Fuckbook"], :root iframe[src^="http://static.mozo.com.au/strips/"], :root iframe[id^="google_ads_iframe"], :root div[jscontroller="U835zd"] + c-wiz[jsrenderer="YnuqN"], :root div[id^="zergnet-widget"], :root div[id^="traffective-ad-"], :root div[id^="sticky_ad_"], :root div[id^="q1-adset-"], :root div[id^="proadszone-"], :root div[id^="lazyad-"], :root div[id^="gtm-ad-"], :root div[id^="google_ads_iframe_"], :root div[id^="ezoic-pub-ad"], :root div[id^="dmRosAdWrapper"], :root div[id^="div-gpt-ad"], :root div[id^="div-adtech-ad-"], :root div[id^="dfp-slot-"], :root div[id^="dfp-ad-"], :root div[id^="block-views-topheader-ad-block-"], :root div[id^="advt-"], :root div[id^="advads_"], :root div[id^="ads300_600-widget"], :root input[onclick^="window.open('http://www.friendlyduck.com/"], :root div[id^="ads300_250-widget"], :root div[id^="ads300_100-widget"], :root div[id^="ads250_250-widget"], :root div[id^="ads120_600-widget"], :root div[id^="adrotate_widgets-"], :root div[id^="adfox_"], :root div[id^="ad_script_"], :root div[id^="ad_rect_"], :root div[id^="ad_position_"], :root div[id^="ad-server-"], :root div[id^="ad-cid-"], :root div[id^="acm-ad-tag-"], :root div[id^="YFBMSN"], :root div[id^="ADV-SLOT-"], :root div[data-spotim-slot], :root div[data-role="sidebarAd"], :root div[data-native_ad], :root div[data-mediatype="advertising"], :root div[data-id-advertdfpconf], :root div[data-flt-ve="sponsored_search_ads"], :root div[data-crl="true"][data-id^="CarouselPLA-"], :root div[data-content="Advertisement"], :root div[data-adunit], :root div[data-adunit-path], :root div[class^="proadszone-"], :root div[class^="pane-google-admanager-"], :root div[class^="lifeOnwerAd"], :root iframe[name^="google_ads_iframe"], :root div[class^="largeRectangleAd_"], :root div[class^="index_adAfterContent_"], :root div[class^="index__adWrapper"], :root div[class^="block-openx-"], :root div[class^="backfill-taboola-home-slot-"], :root div[class^="advertisement-desktop"], :root div[class^="adsbutt_wrapper_"], :root div[class^="ads-partner-"], :root div[class^="adbanner_"], :root div[class^="ad_position_"], :root div[class^="SponsoredAds"], :root div[class^="ResponsiveAd-"], :root div[class^="PreAd_"], :root div[class^="Display_displayAd"], :root div[class^="BannerAd_"], :root div[class^="AdhesionAd_"], :root div[class^="Ad__bigBox"], :root div[class^="Ad__adContainer"], :root div[class^="ad_border_"], :root div[class^="AdItem-"], :root div[class^="AdEmbeded__AddWrapper"], :root span[data-component-type="s-ads-metrics"], :root div[class^="AdBannerWrapper-"], :root div[class*="_browserAdOuterContainer_"], :root div[class*="_AdInArticle_"], :root div[class*="-storyBodyAd-"], :root div > [class][onclick*=".updateAnalyticsEvents"], :root bottomadblock, :root aside[id^="tn_ads_widget-"], :root aside[id^="adrotate_widgets-"], :root amp-ad-custom, :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[target="_blank"][href^="http://api.taboola.com/"], :root a[style="display:block;width:300px;min-height:250px"][href^="http://li.cnet.com/click?"], :root div[class^="BlockAdvert-"], :root a[src^="https://www.utherverse.com/net/"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="//adbit.co/?a=Advertise&"], :root a[href^="http://popup.taboola.com/"], :root a[href^="https://fast-redirecting.com/"], :root a[onmousedown^="this.href='/wp-content/embed-ad-content/"], :root div[role="navigation"] + c-wiz > script + div > .kxhcC, :root a[onclick*="//m.economictimes.com/etmack/click.htm"], :root a[href^="https://www.share-online.biz/affiliate/"], :root a[href^="https://www.securegfm.com/"], :root DFP-AD, :root a[href^="//porngames.adult/?SID="], :root a[href^="https://www.oneclickroot.com/?tap_a="] > img, :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="http://www.duckcash.eu/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://www.iyalc.com/"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="http://webgirlz.online/landing/"], :root a[href^="https://www.g4mz.com/"], :root a[href^="https://www.clicktraceclick.com/"], :root a[href^="https://www.camyou.com/?cam="][href*="&track="], :root a[href^="https://www.camsoda.com/enter.php?id="], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root a[href^="https://www.bebi.com"], :root a[href^="https://www.awin1.com/cread.php?awinaffid="], :root a[href^="https://www.adskeeper.co.uk/"], :root a[href^="http://farm.plista.com/pets"], :root a[href^="https://windscribe.com/promo/"], :root a[href^="http://ad-emea.doubleclick.net/"], :root a[href^="https://understandsolar.com/signup/?lead_source="][href*="&tracking_code="], :root div[id^="tms-ad-dfp-"], :root a[href^="https://trust.zone/go/r.php?RID="], :root a[href^="https://trf.bannerator.com/"], :root a[href^="https://bestcond1tions.com/"], :root a[href^="https://trappist-1d.com/"], :root a[href^="https://traffic.bannerator.com/"], :root a[href^="https://tracking.truthfinder.com/?a="], :root #rhs_block .xpdopen > ._OKe > div > .mod > ._yYf, :root a[href^="https://tracking.gitads.io/"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://track.healthtrader.com/"], :root a[href^="https://track.clickmoi.xyz/"], :root a[href^="https://control.trafficfabrik.com/"], :root a[href^="https://track.52zxzh.com/"], :root .ra[align="right"][width="30%"], :root a[href^="https://axdsz.pro/"], :root a[href^="https://tour.mrskin.com/"], :root a[href^="https://www.what-sexdating.com/"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://t.mobtya.com/"], :root a[href^="https://t.hrtyj.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://syndication.optimizesrv.com/splash.php?"], :root a[href^="https://syndication.exoclick.com/splash.php?"], :root a[href^="http://connectlinking6.com/"], :root a[href^="http://cdn3.adexprts.com/"], :root a[href^="https://spygasm.com/track?"], :root div[id^="ad-div-"], :root a[href^="https://secure.eveonline.com/ft/?aid="], :root a[href^="https://secure.bstlnk.com/"], :root a[href^="https://rev.adsession.com/"], :root a[href^="https://redirect.ero-advertising.com/"], :root div[id^="yandex_ad"], :root a[href*=".frtyl.com/"], :root a[href^="http://y1jxiqds7v.com/"], :root a[href^="https://www.hotgirls4fuck.com/"], :root a[href^="https://www.pornhat.com/"][rel="nofollow"], :root AD-SLOT, :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"], :root #rhs_block .mod > .gws-local-hotels__booking-module, :root a[href^="http://www.my-dirty-hobby.com/?sub="], :root a[href^="https://porndeals.com/?track="], :root a[href^="https://offerforge.net/"], :root div[id^="ad_head_celtra_"], :root a[href^="https://t.grtyi.com/"], :root a[href^="https://myusenet.xyz/"], :root a[href^="https://my-movie.club/"], :root a[href^="https://msecure117.com/"], :root a[href^="https://mk-cdn.net/"], :root a[href^="https://mk-ads.com/"], :root a[href^="https://misspkl.com/"], :root a[href^="https://medleyads.com/"], :root a[href*=".approvallamp.club/"], :root a[href^="https://landing1.brazzersnetwork.com"], :root a[href^="http://adrunnr.com/"], :root a[href^="https://landing.brazzersplus.com/"], :root a[href^="https://land.rk.com/landing/"], :root .lads[width="100%"][style="background:#FFF8DD"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="http://www.uniblue.com/cm/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root div[data-ismultirow="true"][data-id^="CarouselPLA-"], :root a[href^="https://horny-pussies.com/tds"], :root td[valign="top"] > .mainmenu[style="padding:10px 0 0 0 !important;"], :root a[href^="http://feedads.g.doubleclick.net/"], :root a[href^="https://redsittalvetoft.pro/"], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root a[href^="http://cdn.adstract.com/"], :root a[href^="https://gogoman.me/"], :root a[href^="https://go.trackitalltheway.com/"], :root a[href^="https://go.stripchat.com/"][href*="&campaignId="], :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://adnetwrk.com/"], :root a[href^="https://go.gldrdr.com/"], :root div[id^="mainads"], :root a[href^="https://go.currency.com/"], :root a[href^="https://track.afftck.com/"], :root a[href^="http://guideways.info/"], :root a[href^="https://go.cmrdr.com/"], :root a[href*=".inclk.com/"], :root a[href^="https://go.ad2up.com/"], :root a[href^="https://freeadult.games/"], :root a[href^="//nlkdom.com/"], :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://fonts.fontplace9.com/"], :root a[href^="http://clkmon.com/adServe/"], :root a[href^="https://flirtaescopa.com/"], :root a[href^="https://fleshlight.sjv.io/"], :root a[href^="https://earandmarketing.com/"], :root [lazy-ad="leftthin_banner"], :root a[href^="https://dynamicadx.com/"], :root .GFYY1SVE2 > .GFYY1SVD2 > .GFYY1SVG5, :root a[href^="https://djtcollectorclub.org/"][href*="?affiliate_id="], :root a[href^="http://adf.ly/?id="], :root a[href^="https://uncensored3d.com/"], :root a[href^="https://creacdn.top-convert.com/"], :root a[href*="=exoclick"], :root a[href^="https://www.chngtrack.com/"], :root a[href^="https://retiremely.com/"], :root a[href^="https://cpmspace.com/"], :root a[href^="https://click.plista.com/pets"], :root a[href^="https://chaturbate.xyz/"], :root a[href^="http://look.djfiln.com/"], :root a[href^="https://chaturbate.jjgirls.com/"][href*="?tour="], :root a[href^="http://rekoverr.com/"], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://chaturbate.com/affiliates/"], :root .mod > ._jH + .rscontainer, :root a[href^="https://blackorange.go2cloud.org/"], :root a[href^="http://www.linkbucks.com/referral/"], :root a[href^="https://azpresearch.club/"], :root a[href^="http://www.fleshlight.com/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="http://www.1clickdownloader.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://awentw.com/"], :root a[href^="https://albionsoftwares.com/"], :root a[href^="https://affiliate.rusvpn.com/click.php?"], :root a[href^="http://adultfriendfinder.com/p/register.cgi?pid="], :root a[href^="https://www.popads.net/users/"], :root iframe[src^="http://ad.yieldmanager.com/"], :root a[href^="http://pubads.g.doubleclick.net/"], :root a[href^="https://sexdatingz.live/"], :root a[href^="//bwnjijl7w.com/"], :root a[href^="https://adultfriendfinder.com/go/page/landing"], :root a[href*="pussl3.com"], :root a[href^="https://adswick.com/"], :root ADS-RIGHT, :root .GKJYXHBF2 > .GKJYXHBE2 > .GKJYXHBH5, :root a[href^="https://adserver.adreactor.com/"], :root a[href^="https://refpaano.host/"], :root a[href^="https://meet-to-fuck.com/tds"], :root a[href^="https://adhealers.com/"], :root app-advertisement, :root a[href^="https://ad.doubleclick.net/"], :root a[href^="http://zevera.com/afi.html"], :root a[href^="http://go.oclaserver.com/"], :root a[href^="https://ad.atdmt.com/"], :root .trc_rbox .syndicatedItem, :root a[href^="https://aaucwbe.com/"], :root a[href^="https://8a1ccf65f2b1302.com/"], :root a[href^="http://xtgem.com/click?"], :root a[href^="https://ads.trafficpoizon.com/"], :root div[class^="local-feed-banner-ads"], :root a[href^="http://wxdownloadmanager.com/dl/"], :root a[href^="http://www.zergnet.com/i/"], :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="http://www.usearchmedia.com/signup?"], :root a[href^="http://www.torntv-downloader.com/"], :root a[href^="http://www.tirerack.com/affiliates/"], :root a[href^="http://www.text-link-ads.com/"], :root a[href^="https://weedzy.co.uk/"][href*="&utm_"], :root a[href^="http://pokershibes.com/index.php?ref="], :root a[href^="https://usenetxs.website/"], :root a[href^="https://gghf.mobi/"], :root a[href^="http://www.terraclicks.com/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="http://www.sfippa.com/"], :root a[href^="http://www.xmediaserve.com/"], :root a[href^="http://www.sex.com/videos/?utm_"], :root a[href^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.sex.com/?utm_"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="http://www.roboform.com/php/land.php"], :root a[href^="http://secure.signup-page.com/"], :root a[href^="http://www.quick-torrent.com/download.html?aff"], :root a[href^="http://ffxitrack.com/"], :root a[href^="https://www.im88trk.com/"], :root a[href^="http://www.pinkvisualgames.com/?revid="], :root a[href^="https://trklvs.com/"], :root a[href^="http://www.paddypower.com/?AFF_ID="], :root a[href^="http://www.onwebcam.com/random?t_link="], :root a[href^="https://go.247traffic.com/"], :root a[href^="http://www.freefilesdownloader.com/"], :root a[href^="http://www.mysuperpharm.com/"], :root .trc_rbox_border_elm .syndicatedItem, :root a[href^="http://www.myfreepaysite.com/sfw_int.php?aid"], :root a[href^="http://www.myfreepaysite.com/sfw.php?aid"], :root .rhsvw[style="background-color:#fff;margin:0 0 14px;padding-bottom:1px;padding-top:1px;"], :root a[href^="http://www.moneyducks.com/"], :root a[href^="http://bcntrack.com/"], :root a[href^="http://www.securegfm.com/"], :root a[href^="http://www.liversely.net/"], :root a[href^="https://fakelay.com/"], :root a[href^="//88d7b6aa44fb8eb.com/"], :root a[href^="http://www.ireel.com/signup?ref"], :root [href*="//trackmstr.com"], :root [href*="prayuserparka.com/"], :root a[href^="http://www.idownloadplay.com/"], :root a[href^="http://www.hitcpm.com/"], :root a[href^="http://fusionads.net"], :root a[href^="http://www.hibids10.com/"], :root div[class^="awpcp-random-ads"], :root [href*="//securesafemembers.com"], :root a[href^="http://www.graboid.com/affiliates/"], :root a[href^="http://www.gamebookers.com/cgi-bin/intro.cgi?"], :root div[id^="div_openx_ad_"], :root a[href^="http://www.friendlyquacks.com/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="https://content.oneindia.com/www/delivery/"], :root a[href^="http://www.fpcTraffic2.com/blind/in.cgi?"], :root a[href^="http://www.flashx.tv/downloadthis"], :root .trc_rbox_div a[target="_blank"][href^="http://tab"], :root a[href^="https://americafirstpolls.com/"], :root a[href^="http://clickserv.sitescout.com/"], :root a[href^="http://www.firstload.de/affiliate/"], :root a[href^="http://www.twinplan.com/AF_"], :root a[href^="http://www.fducks.com/"], :root a[href^="http://www.epicgameads.com/"], :root a[href^="http://www.easydownloadnow.com/"], :root a[href^="http://www.duckssolutions.com/"], :root a[href^="https://go.trkclick2.com/"], :root a[href^="http://go.seomojo.com/tracking202/"], :root a[href^="http://www.downloadweb.org/"], :root a[href^="http://www.down1oads.com/"], :root a[href^="https://trafficmedia.center/"], :root a[href^="http://www.dealcent.com/register.php?affid="], :root .rscontainer > .ellip, :root a[href^="http://www.clkads.com/adServe/"], :root a[href^="http://www.clickansave.net/"], :root a[href^="https://track.interactivegf.com/"], :root div[class^="adpubs-"], :root a[href*="deliver.trafficfabrik.com"], :root a[href^="http://www.cash-duck.com/"], :root a[href^="https://aff-ads.stickywilds.com/"], :root a[href^="http://www.bitlord.me/share/"], :root div[class^="Directory__footerAds"], :root a[href^="http://www.bet365.com/"][href*="?affiliate="], :root a[href^="http://www.bet365.com/"][href*="&affiliate="], :root a[href^="http://www.badoink.com/go.php?"], :root a[href^="http://www.babylon.com/welcome/index?affID"], :root a[href^="http://www.sexgangsters.com/?pid="], :root a[href^="http://www.amazon.co.uk/exec/obidos/external-search?"], :root a[href^="https://ads-for-free.com/click.php?"], :root a[href^="http://www.socialsex.com/"], :root div[class^="index_adBeforeContent_"], :root a[href^="http://www.affbuzzads.com/affiliate/"], :root a[href^="http://go.ad2up.com/"], :root a[href^="https://badoinkvr.com/"], :root a[href*="/adServe/banners?"], :root a[href^="http://www.adxpansion.com"], :root .plistaList > .itemLinkPET, :root a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root a[href^="http://www.ragazzeinvendita.com/?rcid="], :root a[href^="http://www.TwinPlan.com/AF_"], :root a[href^="http://www.123-reg.co.uk/affiliate2.cgi"], :root div[itemtype="http://www.schema.org/WPAdBlock"], :root a[href^="http://wopertific.info/"], :root a[href^="http://bodelen.com/"], :root a[href^="http://wgpartner.com/"], :root a[href^="http://web.adblade.com/"], :root a[href^="https://go.onclasrv.com/"], :root a[href^="http://wct.link/"], :root a[href^="https://topoffers.com/"][href*="/?pid="], :root a[href^="http://vinfdv6b4j.com/"], :root a[href^="http://s9kkremkr0.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="http://us.marketgid.com"], :root a[href^="http://ul.to/ref/"], :root a[href^="http://ucam.xxx/?utm_"], :root a[href^="https://adsrv4k.com/"], :root a[href^="http://trk.mdrtrck.com/"], :root a[href^="http://traffic.tc-clicks.com/"], :root a[href^="http://www.liutilities.com/"], :root a[href^="http://www.dl-provider.com/search/"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="http://tracking.deltamediallc.com/"], :root a[href^="http://tour.affbuzzads.com/"], :root a[href^="https://iac.ampxdirect.com/"], :root a[href^="http://t.mdn2015x3.com/"], :root div[aria-label="Ads"], :root a[href^="http://axdsz.pro/"], :root a[href^="https://go.ebrokerserve.com/"], :root a[href^="http://galleries.securewebsiteaccess.com/"], :root a[href^="http://stateresolver.link/"], :root a[href^="http://sharesuper.info/"], :root a[href^="https://awecrptjmp.com/"], :root a[href^="http://server.cpmstar.com/click.aspx?poolid="], :root .trc_related_container div[data-item-syndicated="true"], :root a[href^="https://www.firstload.com/affiliate/"], :root a[href^="http://see.kmisln.com/"], :root a[href^="http://secure.vivid.com/track/"], :root a[href^="http://www.downloadthesefiles.com/"], :root a[href^="http://secure.cbdpure.com/aff/"], :root aside[id^="advads_ad_widget-"], :root a[href^="http://lp.ezdownloadpro.info/"], :root a[href^="http://uploaded.net/ref/"], :root a[href^="http://t.mdn2015x1.com/"], :root a[href^="http://azmobilestore.co/"], :root a[href^="http://s5prou7ulr.com/"], :root a[href^="https://affiliates.bet-at-home.com/processing/"], :root a[href^="https://ads.ad4game.com/"], :root a[href^="https://betway.com/"][href*="&a="], :root a[href^="https://easygamepromo.com/ef/custom_affiliate/"], :root a[href^="http://record.betsafe.com/"], :root a[href^="http://mo8mwxi1.com/"], :root a[href^="https://bnsjb1ab1e.com/"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"], :root a[href^="//oardilin.com/"], :root a[href^="http://pwrads.net/"], :root a[href^="http://promos.bwin.com/"], :root a[href*=".irtyc.com/"], :root a[href^="http://z1.zedo.com/"], :root a[href^="https://bs.serving-sys.com"], :root [href*="wap4dollar.com/"], :root .__y_elastic .__y_item, :root a[href^="https://mcdlks.com/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root a[href^="http://play4k.co/"], :root a[href^="http://partner.sbaffiliates.com/"], :root div[id^="ad-gpt-"], :root a[href^="http://pan.adraccoon.com?"], :root a[href^="https://dltags.com/"], :root a[href^="http://onclickads.net/"], :root a[href^="http://n217adserv.com/"], :root a[href^="http://mmo123.co/"], :root div[id^="amzn-assoc-ad"], :root a[href^="https://www.oboom.com/ref/"], :root a[href^="http://media.paddypower.com/redirect.aspx?"], :root a[href^="http://allaptair.club/"], :root .section-result[data-result-ad-type], :root a[href^="https://deliver.ptgncdn.com/"], :root a[href^="http://latestdownloads.net/download.php?"], :root a[href^="http://k2s.cc/code/"], :root #topstuff > #tads, :root a[href*=".bang.com/"][href*="&aff="], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://join3.bannedsextapes.com/track/"], :root a[href^="https://gamescarousel.com/"], :root a[href^="http://istri.it/?"], :root a[href^="//awejmp.com/"], :root a[href^="http://mob1ledev1ces.com/"], :root a[href^="http://www.fbooksluts.com/"], :root a[href^="http://www.cdjapan.co.jp/aff/click.cgi/"], :root a[href^="//api.ad-goi.com/"], :root a[href*="//ridingintractable.com/"], :root aside[id^="div-gpt-ad"], :root a[href^="http://c.actiondesk.com/"], :root a[href^="http://intent.bingads.com/"], :root div[id^="crt-"][style], :root a[href^="http://igromir.info/"], :root a[href^="https://track.themadtrcker.com/"], :root a[href^="http://hyperlinksecure.com/go/"], :root a[href^="https://intrev.co/"], :root a[href^="http://https://www.get-express-vpn.com/offer/"], :root .ob_container .item-container-obpd, :root a[href^="http://websitedhoome.com/"], :root a[href^="http://www.adskeeper.co.uk/"], :root a[href^="https://clickadilla.com/"], :root a[href^="http://www.gfrevenge.com/landing/"], :root a[href^="http://45eijvhgj2.com/"], :root a[href^="http://hpn.houzz.com/"], :root a[href^="http://searchtabnew.com/"], :root a[href*="?adlivk="][href*="&refer="], :root a[href^="//look.djfiln.com/"], :root a[href^="http://greensmoke.com/"], :root a[href^="https://look.utndln.com/"], :root a[href^="//5e1fcb75b6d662d.com/"], :root #tads[aria-label], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root aside[itemtype="https://schema.org/WPAdBlock"], :root a[href^="https://watchmygirlfriend.tv/"], :root .nrelate .nr_partner, :root a[href^="http://go.xtbaffiliates.com/"], :root a[href^="http://install.securewebsiteaccess.com/"], :root a[href^="http://www.revenuehits.com/"], :root a[href^="http://go.mobisla.com/"], :root a[href^="//srv.buysellads.com/"], :root a[href^="http://g1.v.fwmrm.net/ad/"], :root .widget-pane-section-result[data-result-ad-type], :root a[href^="http://imads.integral-marketing.com/"], :root a[href^="http://freesoftwarelive.com/"], :root a[href^="http://adtrackone.eu/"], :root a[href^="http://finaljuyu.com/"], :root a[href^="http://fileloadr.com/"], :root a[href^="http://extra.bet365.com/"][href*="?affiliate="], :root a[href^="http://ethfw0370q.com/"], :root [id^="bunyad_ads_"], :root a[href^="http://elitefuckbook.com/"], :root a[href^="http://eclkmpsa.com/"], :root a[href^="http://earandmarketing.com/"], :root a[href*=".mfroute.com/"], :root #content > #center > .dose > .dosesingle, :root a[href^="http://campaign.bharatmatrimony.com/track/"], :root a[href*="3wr110.xyz/"], :root a[href^="http://d2.zedo.com/"], :root a[href^="http://keep2share.cc/pr/"], :root a[href^="https://iqoption.com/lp/mobile-partner/"][href*="?aff="], :root a[href^="http://cp.cbbp1.com"], :root a[href^="http://contractallsticker.net/"], :root a[href^="http://codec.codecm.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="http://www.downloadplayer1.com/"], :root a[href^="http://clicks.binarypromos.com/"], :root a[href^="https://dediseedbox.com/clients/aff.php?"], :root a[href^="http://www.wantstraffic.com/"], :root a[href^="http://databass.info/"], :root div[class^="AdCard_"], :root a[href^="http://www.urmediazone.com/signup"], :root a[href^="http://click.plista.com/pets"], :root a[href^="http://chaturbate.com/affiliates/"], :root a[href^="https://www.vewwrmp.com/"], :root a[href^="http://www.firstload.com/affiliate/"], :root a[href^="http://www.friendlyadvertisements.com/"], :root a[href^="http://go.fpmarkets.com/"], :root a[href^="//00ae8b5a9c1d597.com/"], :root a[href^="http://cdn3.adbrau.com/"], :root a[href^="http://amzn.to/"] > img[src^="data"], :root a[href^="http://bs.serving-sys.com/"], :root a[href^="http://cpaway.afftrack.com/"], :root a[href^="http://cdn.adsrvmedia.net/"], :root [lazy-ad="top_banner"], :root a[href^="http://360ads.go2cloud.org/"], :root a[href^="http://dftrck.com/"], :root a[href^="http://casino-x.com/?partner"], :root a[href^="http://record.sportsbetaffiliates.com.au/"], :root a[href^="http://campeeks.com/"][href*="&utm_"], :root #flowplayer > div[style="position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px; z-index: 999;"], :root a[href^="http://download-performance.com/"], :root a[href^="http://www.on2url.com/app/adtrack.asp"], :root #\5f _nq__hh[style="display:block!important"], :root div[class^="index_displayAd_"], :root a[href^="http://adultgames.xxx/"], :root a[href^="http://semi-cod.com/clicks/"], :root a[href^="http://campaign.bharatmatrimony.com/cbstrack/"], :root a[href^="http://xads.zedo.com/"], :root a[href^="http://www.affiliates1128.com/processing/"], :root a[href^="http://c.jumia.io/"], :root a[href^="http://yads.zedo.com/"], :root a[href^="https://bullads.net/get/"], :root a[href^="http://down1oads.com/"], :root a[href^="http://buysellads.com/"], :root a[href^="https://uncensored.game/"], :root a[href^="http://betahit.click/"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href^="http://bestorican.com/"], :root a[href^="http://bcp.crwdcntrl.net/"], :root a[href^="http://bc.vc/?r="], :root a[href^="http://banners.victor.com/processing/"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="https://transfer.xe.com/signup/track/redirect?"], :root a[href^="http://anonymous-net.com/"], :root a[href^="http://hotcandyland.com/partner/"], :root a[href^="https://see.kmisln.com/"], :root a[href^="https://www.travelzoo.com/oascampaignclick/"], :root a[href^="http://affiliates.thrixxx.com/"], :root a[href^="http://affiliates.pinnaclesports.com/processing/"], :root a[href^="http://affiliate.coral.co.uk/processing/"], :root a[href^="http://aff.ironsocket.com/"], :root a[href^="http://adsrv.keycaptcha.com"], :root a[href^="https://secure.adnxs.com/clktrb?"], :root a[href^="http://adserver.adtechus.com/"], :root a[href^="http://adserver.adreactor.com/"], :root a[href^="//go.onclasrv.com/"], :root .GHOFUQ5BG2 > .GHOFUQ5BF2 > .GHOFUQ5BG5, :root #\5f _mom_ad_2, :root a[href^="http://ads.sprintrade.com/"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="http://adserver.adtech.de/"], :root a[href^="http://cwcams.com/landing/click/"], :root a[href^="http://ads.betfair.com/redirect.aspx?"], :root a[href^="http://ads.affbuzzads.com/"], :root [id*="MarketGid"], :root #resultspanel > #topads, :root a[href^="http://espn.zlbu.net/"], :root a[href^="http://admrotate.iplayer.org/"], :root a[href^="http://reallygoodlink.extremefreegames.com/"], :root a[href^="http://adlev.neodatagroup.com/"], :root a[href^="http://ad.doubleclick.net/"], :root a[href^="https://k2s.cc/pr/"], :root a[href^="http://ad.au.doubleclick.net/"], :root a[href^="http://srvpub.com/"], :root a[href^="http://a.adquantix.com/"], :root a[href^="http://NowDownloadAll.com"], :root a[href^="http://adtrack123.pl/"], :root ad-desktop-sidebar, :root [id*="MGWrap"], :root a[href^="http://9amq5z4y1y.com/"], :root a[href^="http://1phads.com/"], :root a[href^="https://ismlks.com/"], :root a[href^="//zenhppyad.com/"], :root a[href^="//www.pd-news.com/"], :root [href*=".doubleclick-net.com"], :root a[href^="//www.mgid.com/"], :root a[href^="http://lp.ncdownloader.com/"], :root a[href^="//pubads.g.doubleclick.net/"], :root a[href^="http://refer.webhostingbuzz.com/"], :root a[href^="//medleyads.com/spot/"], :root a[href^="https://ilovemyfreedoms.com/"][href*="?affiliate_id="], :root [href*=".afftracks.online/"], :root a[href^="//healthaffiliate.center/"], :root .l-container > #fishtank, :root a[href^="http://www.ducksnetwork.com/"], :root a[href^="//go.vedohd.org/"], :root [onclick*="content.ad/"], :root a[href^="https://clixtrac.com/"], :root [href*=".adcampo.com/"], :root a[href^="https://www.oboom.com/ad/"], :root a[href^="//4f6b2af479d337cf.com/"], :root a[href^="//4c7og3qcob.com/"], :root a[href^="https://www.arthrozene.com/"][href*="?tid="], :root a[href^="https://awejmp.com/"], :root [href*="//go2page.net"], :root a[href^=" http://www.sex.com/"][href*="&utm_"], :root a[href^="https://fileboom.me/pr/"], :root a[href^="http://marketgid.com"], :root .GPMV2XEDA2 > .GPMV2XEDP1 > .GPMV2XEDJBB, :root a[href*="onclkds."], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href*=".intab.fun/"], :root a[href*="get-express-vpn.xyz"], :root a[href*=".adsrv.eacdn.com/"] > img, :root a[href^="http://mgid.com/"], :root a[href*="a2g-secure.com"], :root a[href*="=adscript"], :root #mn #center_col > div > h2.spon:first-child, :root a[href*="=Adtracker"], :root a[href^="http://4c7og3qcob.com/"], :root a[href^="https://trusted-click-host.com/"], :root a[href^="https://members.linkifier.com/public/affiliateLanding?refCode="], :root a[href^="https://jmp.awempire.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="http://ad-apac.doubleclick.net/"], :root c-wiz[jsrenderer="YnuqN"] > div > div > .Rn1jbe, :root a[href*="/servlet/click/zone?"], :root a[href^="http://refpaano.host/"], :root a[href*="/cmd.php?ad="], :root a[href^="http://track.trkvluum.com/"], :root a[href^="http://linksnappy.com/?ref="], :root [src^="/Redirect.a2b?"], :root #atvcap + #tvcap > .mnr-c > .commercial-unit-mobile-top, :root a[href*="/adrotate-out.php?"], :root a[href^="http://www.firstclass-download.com/"], :root a[href*="//bongacams7.com/track?"], :root div[id^="advads-"], :root a[href^="http://www.myfreecams.com/?co_id="][href*="&track="], :root a[href^="https://track.afcpatrk.com/"], :root a[href*=".ad-center.com/"], :root a[href*=".udncoeln.com/"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href*=".qertewrt.com/"], :root a[href*=".smartadserver.com"], :root .commercial-unit-desktop-rhs > div[jscontroller="YD5eo"], :root .__ywvr .__y_item, :root a[href^="https://farm.plista.com/pets"], :root a[href*=".red90121.com/"], :root a[href^="https://playuhd.host/"], :root .mw > #rcnt > #center_col > #taw > #tvcap > .c, :root a[href*=".purple6401.com/"], :root a[href^="http://www.greenmangaming.com/?tap_a="], :root a[href*=".opskln.com/"], :root div[id^="div_ad_stack_"], :root a[href*=".ichlnk.com/"], :root a[href^="http://a63t9o1azf.com/"], :root a[href*=".axdsz.pro/"], :root a[href^="http://secure.hostgator.com/~affiliat/"], :root [onclick^="window.open('http://adultfriendfinder.com/search/"], :root [href*=".revrtb.com/"], :root .mod > .gws-local-promotions__border, :root a[href^="https://deliver.tf2www.com/"], :root a[href^="http://spygasm.com/track?"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href*=".adk2x.com/"], :root a[href*=".allsports4you.club"], :root a[href^="https://track.bruceads.com/"], :root div[data-adservice-param-tagid="contentad"], :root #MAIN.ShowTopic > .ad, :root a[href^="https://porngames.adult/?SID="], :root a[href^="http://findersocket.com/"], :root a[href^="https://m.do.co/c/"] > img, :root [href*=".ltroute.com/"], :root div[class*="margin-Advert"], :root #tads + div + .c, :root a[href^="//jsmptjmp.com/"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > .vci, :root a[href^="https://financeads.net/tc.php?"], :root #ssmiwdiv[jsdisplay], :root a[href*=".adform.net/"], :root a[href^="http://duckcash.eu/"], :root a[href^="http://www.mobileandinternetadvertising.com/"], :root a[href^="https://track.trkinator.com/"], :root div[id^="ad-position-"], :root a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"], :root a[href^="http://liversely.com/"], :root .GB3L-QEDGY .GB3L-QEDF- > .GB3L-QEDE-, :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="http://liversely.net/"], :root .ra[width="30%"][align="right"] + table[width="70%"][cellpadding="0"], :root a[href^="http://www.coiwqe.site/"], :root iframe[id^="google_ads_frame"], :root a[href^="http://www.bluehost.com/track/"] > img, :root a[data-url^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://n.admagnet.net/"], :root [href*=".jetx.info/"], :root a[href^="http://bestchickshere.com/"], :root div[id^="cns_ads_"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.getyourguide.com/?partner_id="], :root [onclick^="window.open('https://www.brazzersnetwork.com/landing/"], :root a[href^="https://vod09197d7.club/"], :root a[href^="http://k2s.cc/pr/"], :root a[href^="http://9nl.es/"], :root #assetsListings[style="display: block;"], :root [onclick^="window.open('window.open('//delivery.trafficfabrik.com/"], :root a[href^="https://keep2share.cc/pr/"], :root a[data-oburl^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://refpa.top/"], :root a[href*="//bongacams.com/track?"], :root a[href^="https://servedbyadbutler.com/"], :root a[href^="https://mob1ledev1ces.com/"], :root a[data-redirect^="http://paid.outbrain.com/network/redir?"], :root a[href^="https://explore.findanswersnow.net/"], :root [id^="adframe_wrap_"], :root a[href^="http://landingpagegenius.com/"], :root a[data-redirect^="http://click.plista.com/pets"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://go.affiliatexe.com/"], :root [href*="//etracking.pro"], :root a[href^="http://www.fonts.com/BannerScript/"], :root a[href^="http://c.ketads.com/"], :root a[href^="http://6kup12tgxx.com/"], :root a[href^="http://online.ladbrokes.com/promoRedirect?"], :root a[href^="//mob1ledev1ces.com/"], :root [href^="http://raboninco.com/"], :root a[href^="https://www.passeura.com/"], :root a[href^="http://www.pinkvisualpad.com/?revid="], :root a[href^="https://www.friendlyduck.com/AF_"], :root [href^="http://advertisesimple.info/"], :root #center_col > #resultStats + #tads + #res + #tads, :root a[href*="//bongacams2.com/track?"], :root [href*="cadsecs.com/"], :root a[href^="https://zononi.com/"], :root a[href^="http://adserving.unibet.com/"], :root [href*="//trackout.business"], :root #rhs_block .mod > .luhb-div > div[data-async-type="updateHotelBookingModule"], :root a[href^="http://adclick.g.doubleclick.net/"], :root [href*="//mclick.net"], :root .commercial-unit-desktop-rhs > .iKidV > .Ee92ae + .P2mpm + .hp3sk, :root div[role="navigation"] + c-wiz > div > .kxhcC, :root a[href^="http://www.download-provider.org/"], :root [href*="//doubleclick-net.com"], :root a[href^="http://deloplen.com/afu.php?zoneid="], :root a[href^="//db52cc91beabf7e8.com/"], :root [id*="ScriptRoot"], :root a[href^="http://partners.etoro.com/"], :root [href*=".xiloy.site/"], :root a[href^="http://webtrackerplus.com/"], :root a[href^="https://ad13.adfarm1.adition.com/"], :root a[href^="http://clickandjoinyourgirl.com/"], :root div[itemtype="http://schema.org/WPAdBlock"], :root a[href^="https://www.nudeidols.com/cams/"], :root #center_col > #res > #topstuff + #search > div > #ires > #rso > #flun, :root [href*=".trackout.business"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > div > .vci, :root a[href*="delivery.trafficfabrik.com"], :root #ads > .dose > .dosesingle, :root a[href*=".revimedia.com/"], :root #center_col > #taw > #tvcap > .rscontainer, :root [href*=".securesafemembers.com"], :root a[href^="https://www.adxtro.com/"], :root .gbfwa > div[class$="_item"], :root a[href^="https://goraps.com/"], :root [href*=".etracking.pro"], :root a[href^="http://tezfiles.com/pr/"], :root #rhs_block > ol > .rhsvw > .kp-blk > .xpdopen > ._OKe > ol > ._DJe > .luhb-div, :root a[href^="http://see-work.info/"], :root .inlineNewsletterSubscription + .inlineNewsletterSubscription div[class$="_item"], :root a[href*=".orange2258.com/"], :root #taw > .med + div > #tvcap > .mnr-c:not(.qs-ic) > .commercial-unit-mobile-top, :root .plista_widget_belowArticleRelaunch_item[data-type="pet"], :root #main-content > [style="padding:10px 0 0 0 !important;"], :root #center_col > #resultStats + div[style="border:1px solid #dedede;margin-bottom:11px;padding:5px 7px 5px 6px"], :root a[href^="http://get.slickvpn.com/"], :root [data-ad-module], :root [href*=".go2page.net"], :root a[href^="http://hd-plugins.com/download/"], :root a[href^="//voyeurhit.com/cs/"], :root a[href^="http://www.afgr3.com/"], :root [ad-id^="googlead"], :root .ra[align="left"][width="30%"], :root a[href^="https://trackjs.com/?utm_source"], :root AFS-AD, :root #center_col > #\5f Emc, :root a[href^="http://ads2.williamhill.com/redirect.aspx?"], :root a[href^="https://www.spyoff.com/"], :root AD-TRIPLE-BOX, :root .trc_rbox_div .syndicatedItem, :root a[href^="http://www.streamate.com/exports/"], :root [href*="maskip.co/"], :root #center_col > #main > .dfrd > .mnr-c > .c._oc._zs, :root div[data-subscript="Advertising"], :root div[class$="dealnews"] > .dealnews, :root a[href^="http://t.mdn2015x2.com/"], :root div[id^="rc-widget-"], :root a[href^="http://b.bestcompleteusa.info/"], :root .trc_rbox_div .syndicatedItemUB, :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root .icons-rss-feed + .icons-rss-feed div[class$="_item"], :root a[href^="http://aflrm.com/"], :root div[id^="google_dfp_"], :root [href*="get-download.club/"], :root #mn div[style="position:relative"] > #center_col > div > ._dPg, :root a[href^="https://prf.hn/click/"][href*="/camref:"], :root a[href*="5iclx7wa4q.com"], :root a[href*="//bongacams5.com/track?"], :root FBS-AD, :root a[href*=".clksite.com/"], :root a[href^="http://www.webtrackerplus.com/"], :root .GJJKPX2N1 > .GJJKPX2M1 > .GJJKPX2P4, :root a[href^="http://goldmoney.com/?gmrefcode="], :root a[href^="http://papi.mynativeplatform.com:80/pub2/"], :root LEADERBOARD-AD, :root #mn #center_col > div > h2.spon:first-child + ol:last-child, :root a[href*=".cfm?fp="][href*="&prvtof="], :root a[href*="n47adshostnet.com/"], :root #center_col > #taw > #tvcap > .commercial-unit-desktop-top, :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root a[href^="http://servicegetbook.net/"], :root #rhs_block > #mbEnd, :root a[href^="http://cinema.friendscout24.de?"], :root [lazy-ad="lefttop_banner"], :root a[href^="http://www.mrskin.com/tour"], :root .jobs-information-call-to-action + .jobs-information-call-to-action div[class$="_item"], :root a[href^="https://go.hpyjmp.com/"], :root .vi-lb-placeholder[title="ADVERTISEMENT"], :root a[href^="http://api.content.ad/"], :root a[href^="http://adtransfer.net/"], :root a[href*=".clkcln.com/"], :root #rhs_block > script + .c._oc._Ve.rhsvw, :root #\5f _mom_ad_12, :root .__zinit .__y_item, :root .ch[onclick="ga(this,event)"], :root .__ywl .__y_item, :root div[id^="div-ads-"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="http://at.atwola.com/"], :root #center_col > #resultStats + #tads, :root .__yinit .__y_item, :root #center_col > div[style="font-size:14px;margin-right:0;min-height:5px"] > div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff8e7"], :root a[href^="https://secure.cbdpure.com/aff/"], :root AMP-AD, :root iframe[src*="mellowads.com"], :root .__y_inner > .__y_item, :root a[href^="https://affiliate.geekbuying.com/gkbaffiliate.php?"], :root #cnt #center_col > #res > #topstuff > .ts, :root a[href^="https://landing.brazzersnetwork.com/"], :root #cnt #center_col > #taw > #tvcap > .c._oc._Lp, :root a[href^="https://sexsimulator.game/tab/?SID="], :root .rc-cta[data-target], :root a[href*="//promo-bc.com/track?"], :root a[href*=".trust.zone"], :root div[class^="hp-ad-rect-"], :root a[href^="http://dwn.pushtraffic.net/"], :root a[href$="/vghd.shtml"], :root .GFYY1SVD2 > .GFYY1SVC2 > .GFYY1SVF5, :root a[href^="http://affiliates.score-affiliates.com/"], :root a[href^="https://a.adtng.com/"], :root #rhswrapper > #rhssection[border="0"][bgcolor="#ffffff"], :root .Mpopup + #Mad > #MadZone, :root a[href^="http://ads.expekt.com/affiliates/"], :root a[href^="http://www.streamtunerhd.com/signup?"], :root p[id^="div-gpt-ad-"], :root a[href^="http://fsoft4down.com/"], :root a[href*="ad2upapp.com/"], :root a[href*=".fwd28.com/"], :root [lazy-ad="leftbottom_banner"], :root a[href^="http://click.payserve.com/"], :root a[href^="http://serve.williamhill.com/promoRedirect?"], :root [href*=".mclick.net"], :root #center_col > #taw > #tvcap > .cu-container > .commercial-unit-desktop-top, :root a[href^="http://www.menaon.com/installs/"], :root a[href^="http://taboola-"][href*="/redirect.php?app.type="], :root .mw > #rcnt > #center_col > #taw > .c, :root #rhs_block > .ts[cellspacing="0"][cellpadding="0"][style="padding:0"], :root [href*=".trackmstr.com"], :root div[data-ad-underplayer], :root #mbEnd[cellspacing="0"][cellpadding="0"], :root a[href^="http://3wr110.net/"], :root #header + #content > #left > #rlblock_left, :root a[href^="http://www.seekbang.com/cs/"], :root a[href^="http://syndication.exoclick.com/"], :root a[href^="http://bluehost.com/track/"], :root a[href^="https://squren.com/rotator/?atomid="], :root a[href^="//40ceexln7929.com/"], :root #center_col > #resultStats + div + #res + #tads, :root a[href^="http://www.afgr2.com/"], :root #mn div[style="position:relative"] > #center_col > ._Ak, :root #tadsb[aria-label], :root a[href^="//z6naousb.com/"], :root div[id^="ad_bigbox_"], :root #content > #right > .dose > .dosesingle, :root a[href^="http://t.wowtrk.com/"], :root div[class^="Ad__container"], :root a[href^="http://adprovider.adlure.net/"], :root div[id^="adspot-"], :root #\5f _admvnlb_modal_container, :root div[id^="drudge-column-ads-"], :root a[href^="http://tour.mrskin.com/"], :root a[href^="http://rs-stripe.wsj.com/stripe/redirect"], :root #main_col > #center_col div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff7ed"], :root a[data-nvp*="'trafficUrl':'https://paid.outbrain.com/network/redir?"], :root a[href^="http://www.sex.com/pics/?utm_"], :root a[href^="http://vo2.qrlsx.com/"], :root a[href^="http://engine.newsmaxfeednetwork.com/"], :root a[href^="http://ad.yieldmanager.com/"], :root a[href^="http://www.plus500.com/?id="], :root #flowplayer > div[style="z-index: 208; position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px;"], :root a[href^="https://giftsale.co.uk/?utm_"], :root a[href^="https://syndication.dynsrvtbg.com/splash.php?"] { display: none !important; }</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><meta name="description" content="Participate in the coding contest December Challenge 2020 Division 2 to better your competitive programming skills. Compete now and improve your rankings."><style type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script charset="utf-8" src="./Vaccine Distribution _ CodeChef_files/button.63c51c903061d0dbd843c41e8a00aa5a.js.download"></script><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax_LineBox {display: table!important}
+.MathJax_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?V=2.7.3') format('woff'), url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?V=2.7.3') format('opentype')}
+@font-face {font-family: MathJax_Main-bold; src: url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff?V=2.7.3') format('woff'), url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?V=2.7.3') format('opentype')}
+@font-face {font-family: MathJax_Main-italic; src: url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff?V=2.7.3') format('woff'), url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?V=2.7.3') format('opentype')}
+@font-face {font-family: MathJax_Math-italic; src: url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?V=2.7.3') format('woff'), url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?V=2.7.3') format('opentype')}
+@font-face {font-family: MathJax_Caligraphic; src: url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff?V=2.7.3') format('woff'), url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf?V=2.7.3') format('opentype')}
+@font-face {font-family: MathJax_Size1; src: url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?V=2.7.3') format('woff'), url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=2.7.3') format('opentype')}
+@font-face {font-family: MathJax_Size2; src: url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff?V=2.7.3') format('woff'), url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?V=2.7.3') format('opentype')}
+@font-face {font-family: MathJax_Size3; src: url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff?V=2.7.3') format('woff'), url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?V=2.7.3') format('opentype')}
+@font-face {font-family: MathJax_Size4; src: url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff?V=2.7.3') format('woff'), url('https://www.codechef.com/em/libs/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?V=2.7.3') format('opentype')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="sidebar-right"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+<script>window.csrfToken = '56748ebbf28188b45beba54fd30214ef792275d23516ae661bf88a13b7a672ff';</script><style>
+  a.div-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a.div-link span {
+    cursor: pointer;
+    color: #3b5998;
+    text-decoration: underline;
+  }
+
+  a.div-link span:hover {
+    text-decoration: none;
+  }
+</style>
+<div id="ember-root" class="ember-application">
+
+  
+  <!--#application handlebars template-->
+
+  
+  <!--#recentActivityRow handlebars template-->
+
+  
+  <!--#contestPageRow handlebars template-->
+
+  
+  <!--#singleRow handlebars template-->
+
+  
+  <!--#contestPage handlebars template-->
+
+  
+  <!--#problemPage handlebars template-->
+<div id="ember256" class="ember-view">
+    <section class="topbar">
+      <div class="row">
+        <div class="small-12 columns">
+          <ul class="inline-list right social-login">
+            
+            
+            <li class="loggedin-user no-select">
+
+                <span class="left">
+                    <a href="https://www.codechef.com/users/fahadh_333"><div class="picture"><img src="./Vaccine Distribution _ CodeChef_files/user_default_thumb.jpg" width="30px" height="30px"></div> </a>
+                </span>
+
+              <span class="right">
+                  Hello <a>fahadh_333<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                  <ul class="user-dropdown" style="display: none;">
+                    <span class="caret"></span>
+                    <li><a href="https://www.codechef.com/users/fahadh_333">Account</a></li>
+                    <li><a href="https://www.codechef.com/users/fahadh_333/edit">Edit Profile</a></li>
+                    <li><a href="https://goodies.codechef.com/my-laddus/">My Laddus</a></li>
+                    <li><a href="https://www.codechef.com/apps">My Apps</a></li>
+                    <li><a href="https://www.codechef.com/todos">My Todos</a></li>
+                    <li><a href="https://www.codechef.com/sets">My Sets</a></li>
+                    <li><a href="https://www.codechef.com/certificates">My Certificates</a></li>
+                      
+                          <li><a href="https://www.codechef.com/users/fahadh_333/teams">My Teams</a></li>
+                    <li><a href="https://www.codechef.com/teams/invites">Team Invites</a></li>
+                      
+                      <li><a href="https://www.codechef.com/referral">Referrals</a></li>
+                  </ul>
+                </span>
+            </li>
+            <li class="todo-section notification-box-todo" title="My Todo List">
+              <i></i>
+              <span class="notification-counter"></span>
+              <span class="notification-listbox"></span>
+            </li>
+
+            
+
+            
+            <div id="facebook-login">
+              <div id="oauth-buttons" class="oauth-buttons-header">
+                <li>
+                <a class="icon-social oauth_button oauth_button-small connect" title="Connect Google" id="button_google" onclick="connectOauth(event, &#39;/OAuth/google&#39;)">
+                </a>
+            </li><li>
+                <a class="icon-social oauth_button oauth_button-small connect" title="Connect Github" id="button_github" onclick="connectOauth(event, &#39;/OAuth/github&#39;)">
+                </a>
+            </li><li>
+                <a class="icon-social oauth_button oauth_button-small connect" title="Connect Facebook" id="button_facebook" onclick="connectOauth(event, &#39;/fb/auth?src=api%2Fuser%2Fme&#39;);">
+                </a>
+            </li>
+              </div>
+            </div>
+            
+            <!--#facebook-login-->
+
+            
+            <a href="https://www.codechef.com/logout" class="button grey logout-link">Logout</a>
+            
+            
+          </ul>
+          <div id="custom-login"></div>
+        </div>
+      </div>
+    </section>
+    <!--.topbar-->
+
+    <header class="site">
+      <div class="row">
+        <div class="small-12 columns">
+          <h1 class="left">
+            <a href="https://www.codechef.com/" title=""><img src="./Vaccine Distribution _ CodeChef_files/logo.svg" alt="CodeChef is a non-commercial competitive programming community" id="logo"><span></span></a>
+          </h1>
+          <nav class="right">
+            <div id="block-nice_menus-1" class="block block-nice_menus block-header">
+              <div class="content">
+                <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>
+                 <ul class="nice-menu nice-menu-down" id="nice-menu-0"><li id="menu-302" class="menuparent menu-path-https--www.codechef.com-problems-school-itm_mediumnavmenuitm_campaignproblems_head"><a href="https://www.codechef.com/problems/school/?itm_medium=navmenu&amp;itm_campaign=problems_head" title="">PRACTICE &amp; LEARN</a><ul><li id="menu-5215" class="menu-path-https--www.codechef.com-ideitm_mediumnavmenuitm_campaignide"><a href="https://www.codechef.com/ide?itm_medium=navmenu&amp;itm_campaign=ide" title="">Code, Compile &amp; Run (IDE)</a></li>
+<li id="menu-9424" class="menu-path-https--www.codechef.com-LEARNDSA-itm_mediumnavmenuitm_campaignlearndsa"><a href="https://www.codechef.com/LEARNDSA/?itm_medium=navmenu&amp;itm_campaign=learndsa" title="">DSA Learning Series</a></li>
+<li id="menu-2602" class="menu-path-https--www.codechef.com-tags-problems-itm_mediumnavmenuitm_campaigntagsproblems"><a href="https://www.codechef.com/tags/problems/?itm_medium=navmenu&amp;itm_campaign=tagsproblems" title="">Search Problems by Tags</a></li>
+<li id="menu-303" class="menu-path-https--www.codechef.com-problems-school-itm_mediumnavmenuitm_campaignproblems"><a href="https://www.codechef.com/problems/school/?itm_medium=navmenu&amp;itm_campaign=problems" title="">Practice Problems by Difficulty Level</a></li>
+<li id="menu-304" class="menu-path-https--www.codechef.com-wiki-itm_mediumnavmenuitm_campaignwiki"><a href="https://www.codechef.com/wiki/?itm_medium=navmenu&amp;itm_campaign=wiki" title="">CodeChef Wiki</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-https--www.codechef.com-contests-itm_mediumnavmenuitm_campaignallcontests_head"><a href="https://www.codechef.com/contests/?itm_medium=navmenu&amp;itm_campaign=allcontests_head" title="">COMPETE</a><ul><li id="menu-5225" class="menu-path-https--www.codechef.com-DEC20-itm_mediumnavmenuitm_campaignDEC20"><a href="https://www.codechef.com/DEC20/?itm_medium=navmenu&amp;itm_campaign=DEC20" title="">December Challenge 2020</a></li>
+<li id="menu-5679" class="menu-path-https--www.codechef.com-COOK125-itm_mediumnavmenuitm_campaignCOOK125"><a href="https://www.codechef.com/COOK125/?itm_medium=navmenu&amp;itm_campaign=COOK125" title="">December Cook-Off 2020</a></li>
+<li id="menu-6466" class="menu-path-https--www.codechef.com-LTIME90-itm_mediumnavmenuitm_campaignLTIME90"><a href="https://www.codechef.com/LTIME90/?itm_medium=navmenu&amp;itm_campaign=LTIME90" title="">November Lunchtime 2020</a></li>
+<li id="menu-2203" class="menu-path-https--www.codechef.com-contests-itm_mediumnavmenuitm_campaignallcontests#present-contests"><a href="https://www.codechef.com/contests/?itm_medium=navmenu&amp;itm_campaign=allcontests#present-contests" title="">All Running Contests</a></li>
+<li id="menu-5224" class="menu-path-https--www.codechef.com-contests-itm_mediumnavmenuitm_campaignallcontests#future-contests"><a href="https://www.codechef.com/contests/?itm_medium=navmenu&amp;itm_campaign=allcontests#future-contests" title="">All Future Contests</a></li>
+<li id="menu-6868" class="menu-path-https--www.codechef.com-contests-itm_mediumnavmenuitm_campaignallcontests#past-contests"><a href="https://www.codechef.com/contests/?itm_medium=navmenu&amp;itm_campaign=allcontests#past-contests" title="">All Past Contests</a></li>
+<li id="menu-1820" class="menu-path-https--www.codechef.com-event-calendar-itm_mediumnavmenuitm_campaigncalendar"><a href="https://www.codechef.com/event-calendar/?itm_medium=navmenu&amp;itm_campaign=calendar" title="Event Calendar">Contest Calendar</a></li>
+<li id="menu-6689" class="menu-path-https--www.codechef.com-ratings-divisions-itm_mediumnavmenuitm_campaigndivisions"><a href="https://www.codechef.com/ratings/divisions/?itm_medium=navmenu&amp;itm_campaign=divisions" title="Rating Divisions">Contest Divisions</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-https--discuss.codechef.com-itm_mediumnavmenuitm_campaigndiscuss_head"><a href="https://discuss.codechef.com/?itm_medium=navmenu&amp;itm_campaign=discuss_head" title="">DISCUSS</a><ul><li id="menu-139" class="menu-path-https--discuss.codechef.com-itm_mediumnavmenuitm_campaigndiscuss"><a href="https://discuss.codechef.com/?itm_medium=navmenu&amp;itm_campaign=discuss" title="">Discussion Forum</a></li>
+<li id="menu-140" class="menu-path-https--blog.codechef.com-itm_mediumnavmenuitm_campaignblog"><a href="https://blog.codechef.com/?itm_medium=navmenu&amp;itm_campaign=blog" title="">CodeChef Blog</a></li>
+<li id="menu-9517" class="menu-path-https--www.codechef.com-webinar-conversations-itm_mediumnavmenuitm_campaignconversations"><a href="https://www.codechef.com/webinar/conversations/?itm_medium=navmenu&amp;itm_campaign=conversations" title="">Conversations with CodeChef</a></li>
+<li id="menu-2202" class="menu-path-https--www.facebook.com-CodeChef-groups-itm_mediumnavmenuitm_campaignfbgroups"><a href="https://www.facebook.com/CodeChef/groups/?itm_medium=navmenu&amp;itm_campaign=fbgroups" title="">Our Facebook Communities</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-https--www.codechef.com-#"><a href="https://www.codechef.com/#" title="">OUR INITIATIVES</a><ul><li id="menu-715" class="menu-path-https--www.codechef.com-monthly-programming-contests-itm_mediumnavmenuitm_campaignmonthlycontests"><a href="https://www.codechef.com/monthly-programming-contests/?itm_medium=navmenu&amp;itm_campaign=monthlycontests" title="Programming Contests">Monthly Contests</a></li>
+<li id="menu-733" class="menu-path-https--www.codechef.com-hostyourcontest-itm_mediumnavmenuitm_campaignhyc"><a href="https://www.codechef.com/hostyourcontest/?itm_medium=navmenu&amp;itm_campaign=hyc" title="Hosting Contest on CodeChef">Host your Contest</a></li>
+<li id="menu-650" class="menu-path-https--www.codechef.com-certification-data-structures-and-algorithms-about-itm_mediumnavmenuitm_campaigncertification"><a href="https://www.codechef.com/certification/data-structures-and-algorithms/about/?itm_medium=navmenu&amp;itm_campaign=certification" title="">CodeChef Certification</a></li>
+<li id="menu-5741" class="menu-path-https--www.codechef.com-school-itm_mediumnavmenuitm_campaignschool"><a href="https://www.codechef.com/school/?itm_medium=navmenu&amp;itm_campaign=school" title="">CodeChef for Schools</a></li>
+<li id="menu-3830" class="menu-path-https--www.codechef.com-college-chapters-itm_mediumnavmenuitm_campaigncampuschapters"><a href="https://www.codechef.com/college-chapters/?itm_medium=navmenu&amp;itm_campaign=campuschapters" title="">College Chapters</a></li>
+<li id="menu-1371" class="menu-path-https--www.facebook.com-groups-womenincp-itm_mediumnavmenuitm_campaignwicp"><a href="https://www.facebook.com/groups/womenincp/?itm_medium=navmenu&amp;itm_campaign=wicp" title="">Women In Competitive Programming</a></li>
+<li id="menu-2310" class="menu-path-https--www.codechef.com-goforgold-itm_mediumnavmenuitm_campaigngoforgold"><a href="https://www.codechef.com/goforgold/?itm_medium=navmenu&amp;itm_campaign=goforgold" title="">Go for Gold</a></li>
+<li id="menu-5866" class="menu-path-https--www.codechef.com-snackdown-itm_mediumnavmenuitm_campaignsnackdown"><a href="https://www.codechef.com/snackdown/?itm_medium=navmenu&amp;itm_campaign=snackdown" title="">SnackDown</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-https--www.codechef.com-corporates"><a href="https://www.codechef.com/corporates" title="">ASSOCIATE WITH US</a><ul><li id="menu-146" class="menu-path-https--www.codechef.com-corporatesitm_mediumnavmenuitm_campaignbusiness"><a href="https://www.codechef.com/corporates?itm_medium=navmenu&amp;itm_campaign=business" title="">Business Partnerships</a></li>
+<li id="menu-5824" class="menu-path-https--www.codechef.com-volunteer-itm_mediumnavmenuitm_campaignvolunteer"><a href="https://www.codechef.com/volunteer/?itm_medium=navmenu&amp;itm_campaign=volunteer" title="">Volunteer with Us</a></li>
+<li id="menu-1389" class="menu-path-https--www.codechef.com-problemsetting-itm_mediumnavmenuitm_campaignproblemsetting"><a href="https://www.codechef.com/problemsetting/?itm_medium=navmenu&amp;itm_campaign=problemsetting" title="Codechef Problem Creation">Become a Problem Setter</a></li>
+<li id="menu-9149" class="menu-path-https--www.codechef.com-careers-itm_mediumnavmenuitm_campaigncareers"><a href="https://www.codechef.com/careers/?itm_medium=navmenu&amp;itm_campaign=careers" title="">Careers Opportunities</a></li>
+<li id="menu-850" class="menu-path-https--www.codechef.com-contactus-itm_mediumnavmenuitm_campaigncontactus"><a href="https://www.codechef.com/contactus/?itm_medium=navmenu&amp;itm_campaign=contactus" title="">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-5681" class="menuparent menu-path-https--www.codechef.com-ratings-all"><a href="https://www.codechef.com/ratings/all" title="">MORE</a><ul><li id="menu-708" class="menu-path-https--www.codechef.com-ratings-all-itm_mediumnavmenuitm_campaignratings"><a href="https://www.codechef.com/ratings/all/?itm_medium=navmenu&amp;itm_campaign=ratings" title="">CodeChef Ratings</a></li>
+<li id="menu-6030" class="menu-path-https--goodies.codechef.com-itm_mediumnavmenuitm_campaigngoodies"><a href="https://goodies.codechef.com/?itm_medium=navmenu&amp;itm_campaign=goodies" title="">CodeChef Goodies</a></li>
+<li id="menu-1858" class="menu-path-https--www.codechef.com-workshops-itm_mediumnavmenuitm_campaignworkshops"><a href="https://www.codechef.com/workshops/?itm_medium=navmenu&amp;itm_campaign=workshops" title="">CodeChef Workshops</a></li>
+<li id="menu-826" class="menu-path-https--www.codechef.com-icpc-itm_mediumnavmenuitm_campaignicpc"><a href="https://www.codechef.com/icpc/?itm_medium=navmenu&amp;itm_campaign=icpc" title="">ICPC</a></li>
+<li id="menu-2372" class="menu-path-https--www.codechef.com-ioi-itm_mediumnavmenuitm_campaignioi"><a href="https://www.codechef.com/ioi/?itm_medium=navmenu&amp;itm_campaign=ioi" title="">IOI</a></li>
+<li id="menu-643" class="menu-path-https--www.codechef.com-wiki-faq-itm_mediumnavmenuitm_campaignfaq"><a href="https://www.codechef.com/wiki/faq/?itm_medium=navmenu&amp;itm_campaign=faq" title="">Frequently Asked Questions</a></li>
+<li id="menu-151" class="menu-path-https--www.codechef.com-aboutus-itm_mediumnavmenuitm_campaignaboutus"><a href="https://www.codechef.com/aboutus/?itm_medium=navmenu&amp;itm_campaign=aboutus" title="">About Us</a></li>
+</ul>
+</li>
+</ul>
+ 
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--.site header-->
+    <div id="ember486" class="ember-view">
+    <main class="problem-container contest-container content" id="content-regions">
+      
+
+      <div>
+        <aside class="breadcrumbs">
+          <a href="https://www.codechef.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.codechef.com/contests/">Compete</a>&nbsp;»&nbsp;<a id="ember494" class="ember-view" href="https://www.codechef.com/DEC20B?order=desc&amp;sortBy=successful_submissions">December Challenge 2020 Division 2</a>
+          &nbsp;»&nbsp;Vaccine Distribution
+        </aside>
+      </div>
+
+      <header>
+        <div class="row collapse">
+          <div class="large-12 columns">
+            <h1>
+              Vaccine Distribution
+              <span>Problem Code: <strong id="problem-code">VACCINE2</strong></span>
+              <i class="icon-add-todo right">
+                
+                <div class="todo-widget" style="visibility: visible; position: relative;top: 5px;"><input style="outline: none;" type="image" src="./Vaccine Distribution _ CodeChef_files/add1.png" title="Add problem to Todo list" class="todo-button" width="25" height="25" problem="VACCINE2" contest="DEC20B"><div class="todo-button-message"></div></div>
+                
+              </i>
+              
+              <a class="button blue right" href="https://www.codechef.com/DEC20B/submit/VACCINE2" data-bindattr-498="498">Submit</a>
+              
+            </h1>
+            <div class="social-share social-button-container cc-visible" data-bindattr-491="491">
+              <div class="social-button twitter-position">
+                <div style="width: 80px; height: 20px;margin-top: -2px;"><a href="https://twitter.com/share" class="twitter-share-button" data-via="codechef">Tweet</a></div>
+              </div>
+              <div class="social-button">
+                <div class="fb-like fb_iframe_widget" data-width="370px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=191217060453&amp;container_width=0&amp;href=https%3A%2F%2Fwww.codechef.com%2FDEC20B%2Fproblems%2FVACCINE2&amp;layout=standard&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=370px"><span style="vertical-align: bottom; width: 370px; height: 20px;"><iframe name="f1a97f6ad2cb908" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./Vaccine Distribution _ CodeChef_files/like.html" style="border: none; visibility: visible; width: 370px; height: 20px;" class=""></iframe></span></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <!--.social-share-->
+
+          <div class="clearfix"></div>
+        </div>
+      </header>
+
+      <section class="content-area small-8 columns pl0">
+        <div class="problem-statement mathjax-support" id="problem-statement">
+          
+          <h3 id="readproblemstatementsinhindihttpwwwcodechefcomdownloadtranslateddec20hindivaccine2pdfbengalihttpwwwcodechefcomdownloadtranslateddec20bengalivaccine2pdfmandarinchinesehttpwwwcodechefcomdownloadtranslateddec20mandarinvaccine2pdfrussianhttpwwwcodechefcomdownloadtranslateddec20russianvaccine2pdfandvietnamesehttpwwwcodechefcomdownloadtranslateddec20vietnamesevaccine2pdfaswell" class=" mathjax-support">Read problem statements in <a href="http://www.codechef.com/download/translated/DEC20/hindi/VACCINE2.pdf" class=" mathjax-support">Hindi</a>, <a href="http://www.codechef.com/download/translated/DEC20/bengali/VACCINE2.pdf" class=" mathjax-support">Bengali</a>, <a href="http://www.codechef.com/download/translated/DEC20/mandarin/VACCINE2.pdf" class=" mathjax-support">Mandarin Chinese</a>, <a href="http://www.codechef.com/download/translated/DEC20/russian/VACCINE2.pdf" class=" mathjax-support">Russian</a>, and <a href="http://www.codechef.com/download/translated/DEC20/vietnamese/VACCINE2.pdf" class=" mathjax-support">Vietnamese</a> as well.</h3>
+<p class=" mathjax-support">Finally, a COVID vaccine is out on the market and the Chefland government has asked you to form a plan to distribute it to the public as soon as possible. There are a total of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 1.169em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.947em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1000.95em, 2.336em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: MathJax_Math-italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.114em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.063em; border-left: 0px solid; width: 0px; height: 0.937em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-1">N</script> people with ages <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mo&gt;&amp;#x2026;&lt;/mo&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-4" style="width: 7.003em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.836em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.558em, 1005.84em, 2.503em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-5"><span class="msubsup" id="MathJax-Span-6"><span style="display: inline-block; position: relative; width: 0.947em; height: 0px;"><span style="position: absolute; clip: rect(3.392em, 1000.5em, 4.169em, -999.997em); top: -3.997em; left: 0em;"><span class="mi" id="MathJax-Span-7" style="font-family: MathJax_Math-italic;">a</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span><span style="position: absolute; top: -3.831em; left: 0.558em;"><span class="mn" id="MathJax-Span-8" style="font-size: 70.7%; font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span></span></span><span class="mo" id="MathJax-Span-9" style="font-family: MathJax_Main;">,</span><span class="msubsup" id="MathJax-Span-10" style="padding-left: 0.169em;"><span style="display: inline-block; position: relative; width: 0.947em; height: 0px;"><span style="position: absolute; clip: rect(3.392em, 1000.5em, 4.169em, -999.997em); top: -3.997em; left: 0em;"><span class="mi" id="MathJax-Span-11" style="font-family: MathJax_Math-italic;">a</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span><span style="position: absolute; top: -3.831em; left: 0.558em;"><span class="mn" id="MathJax-Span-12" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span></span></span><span class="mo" id="MathJax-Span-13" style="font-family: MathJax_Main;">,</span><span class="mo" id="MathJax-Span-14" style="font-family: MathJax_Main; padding-left: 0.169em;">…</span><span class="mo" id="MathJax-Span-15" style="font-family: MathJax_Main; padding-left: 0.169em;">,</span><span class="msubsup" id="MathJax-Span-16" style="padding-left: 0.169em;"><span style="display: inline-block; position: relative; width: 1.225em; height: 0px;"><span style="position: absolute; clip: rect(3.392em, 1000.5em, 4.169em, -999.997em); top: -3.997em; left: 0em;"><span class="mi" id="MathJax-Span-17" style="font-family: MathJax_Math-italic;">a</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span><span style="position: absolute; top: -3.831em; left: 0.558em;"><span class="mi" id="MathJax-Span-18" style="font-size: 70.7%; font-family: MathJax_Math-italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.058em;"></span></span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.263em; border-left: 0px solid; width: 0px; height: 0.87em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>a</mi><mi>N</mi></msub></math></span></span><script type="math/tex" id="MathJax-Element-2">a_1, a_2, \ldots, a_N</script>.</p>
+<p class=" mathjax-support">There is only one hospital where vaccination is done and it is only possible to vaccinate up to <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-19" style="width: 1.003em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.836em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1000.84em, 2.336em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-20"><span class="mi" id="MathJax-Span-21" style="font-family: MathJax_Math-italic;">D</span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.063em; border-left: 0px solid; width: 0px; height: 0.937em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>D</mi></math></span></span><script type="math/tex" id="MathJax-Element-3">D</script> people per day. Anyone whose age is <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mo&gt;&amp;#x2265;&lt;/mo&gt;&lt;mn&gt;80&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-22" style="width: 2.503em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.058em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1002em, 2.447em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-23"><span class="mo" id="MathJax-Span-24" style="font-family: MathJax_Main;">≥</span><span class="mn" id="MathJax-Span-25" style="font-family: MathJax_Main; padding-left: 0.281em;">80</span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.197em; border-left: 0px solid; width: 0px; height: 1.07em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≥</mo><mn>80</mn></math></span></span><script type="math/tex" id="MathJax-Element-4">\ge 80</script> or <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-5-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mn&gt;9&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-26" style="width: 1.892em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.558em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1001.5em, 2.447em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-27"><span class="mo" id="MathJax-Span-28" style="font-family: MathJax_Main;">≤</span><span class="mn" id="MathJax-Span-29" style="font-family: MathJax_Main; padding-left: 0.281em;">9</span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.197em; border-left: 0px solid; width: 0px; height: 1.07em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≤</mo><mn>9</mn></math></span></span><script type="math/tex" id="MathJax-Element-5">\le 9</script> is considered to be <em class=" mathjax-support">at risk</em>. On each day, you may not vaccinate both a person who is at risk and a person who is not at risk. Find the smallest number of days needed to vaccinate everyone.</p>
+<h3 id="input" class=" mathjax-support">Input</h3>
+<ul class=" mathjax-support">
+<li class=" mathjax-support">The first line of the input contains a single integer <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-6-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-30" style="width: 0.892em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.725em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1000.73em, 2.336em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-31"><span class="mi" id="MathJax-Span-32" style="font-family: MathJax_Math-italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.114em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.063em; border-left: 0px solid; width: 0px; height: 0.937em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi></math></span></span><script type="math/tex" id="MathJax-Element-6">T</script> denoting the number of test cases. The description of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-7-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-33" style="width: 0.892em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.725em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1000.73em, 2.336em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-34"><span class="mi" id="MathJax-Span-35" style="font-family: MathJax_Math-italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.114em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.063em; border-left: 0px solid; width: 0px; height: 0.937em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi></math></span></span><script type="math/tex" id="MathJax-Element-7">T</script> test cases follows.</li>
+<li class=" mathjax-support">The first line of each test case contains two space-separated integers <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-8-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-36" style="width: 1.169em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.947em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1000.95em, 2.336em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-37"><span class="mi" id="MathJax-Span-38" style="font-family: MathJax_Math-italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.114em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.063em; border-left: 0px solid; width: 0px; height: 0.937em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-8">N</script> and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-9-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-39" style="width: 1.003em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.836em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1000.84em, 2.336em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-40"><span class="mi" id="MathJax-Span-41" style="font-family: MathJax_Math-italic;">D</span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.063em; border-left: 0px solid; width: 0px; height: 0.937em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>D</mi></math></span></span><script type="math/tex" id="MathJax-Element-9">D</script>.</li>
+<li class=" mathjax-support">The second line contains <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-10-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-42" style="width: 1.169em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.947em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1000.95em, 2.336em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-43"><span class="mi" id="MathJax-Span-44" style="font-family: MathJax_Math-italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.114em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.063em; border-left: 0px solid; width: 0px; height: 0.937em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-10">N</script> space-separated integers <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-11-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mo&gt;&amp;#x2026;&lt;/mo&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-45" style="width: 7.003em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.836em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.558em, 1005.84em, 2.503em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-46"><span class="msubsup" id="MathJax-Span-47"><span style="display: inline-block; position: relative; width: 0.947em; height: 0px;"><span style="position: absolute; clip: rect(3.392em, 1000.5em, 4.169em, -999.997em); top: -3.997em; left: 0em;"><span class="mi" id="MathJax-Span-48" style="font-family: MathJax_Math-italic;">a</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span><span style="position: absolute; top: -3.831em; left: 0.558em;"><span class="mn" id="MathJax-Span-49" style="font-size: 70.7%; font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span></span></span><span class="mo" id="MathJax-Span-50" style="font-family: MathJax_Main;">,</span><span class="msubsup" id="MathJax-Span-51" style="padding-left: 0.169em;"><span style="display: inline-block; position: relative; width: 0.947em; height: 0px;"><span style="position: absolute; clip: rect(3.392em, 1000.5em, 4.169em, -999.997em); top: -3.997em; left: 0em;"><span class="mi" id="MathJax-Span-52" style="font-family: MathJax_Math-italic;">a</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span><span style="position: absolute; top: -3.831em; left: 0.558em;"><span class="mn" id="MathJax-Span-53" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span></span></span><span class="mo" id="MathJax-Span-54" style="font-family: MathJax_Main;">,</span><span class="mo" id="MathJax-Span-55" style="font-family: MathJax_Main; padding-left: 0.169em;">…</span><span class="mo" id="MathJax-Span-56" style="font-family: MathJax_Main; padding-left: 0.169em;">,</span><span class="msubsup" id="MathJax-Span-57" style="padding-left: 0.169em;"><span style="display: inline-block; position: relative; width: 1.225em; height: 0px;"><span style="position: absolute; clip: rect(3.392em, 1000.5em, 4.169em, -999.997em); top: -3.997em; left: 0em;"><span class="mi" id="MathJax-Span-58" style="font-family: MathJax_Math-italic;">a</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span><span style="position: absolute; top: -3.831em; left: 0.558em;"><span class="mi" id="MathJax-Span-59" style="font-size: 70.7%; font-family: MathJax_Math-italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.058em;"></span></span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.263em; border-left: 0px solid; width: 0px; height: 0.87em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mo>…</mo><mo>,</mo><msub><mi>a</mi><mi>N</mi></msub></math></span></span><script type="math/tex" id="MathJax-Element-11">a_1, a_2, \ldots, a_N</script>.</li>
+</ul>
+<h3 id="output" class=" mathjax-support">Output</h3>
+<p class=" mathjax-support">For each test case, print a single line containing one integer ― the smallest required number of days.</p>
+<h3 id="constraints" class=" mathjax-support">Constraints</h3>
+<ul class=" mathjax-support">
+<li class=" mathjax-support"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-12-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-60" style="width: 5.892em; display: inline-block;"><span style="display: inline-block; position: relative; width: 4.892em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1004.84em, 2.447em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-61"><span class="mn" id="MathJax-Span-62" style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-63" style="font-family: MathJax_Main; padding-left: 0.281em;">≤</span><span class="mi" id="MathJax-Span-64" style="font-family: MathJax_Math-italic; padding-left: 0.281em;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.114em;"></span></span><span class="mo" id="MathJax-Span-65" style="font-family: MathJax_Main; padding-left: 0.281em;">≤</span><span class="mn" id="MathJax-Span-66" style="font-family: MathJax_Main; padding-left: 0.281em;">10</span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.197em; border-left: 0px solid; width: 0px; height: 1.137em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>T</mi><mo>≤</mo><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-12">1 \le T \le 10</script></li>
+<li class=" mathjax-support"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-13-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;msup&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-67" style="width: 6.669em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.558em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.114em, 1005.56em, 2.447em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-68"><span class="mn" id="MathJax-Span-69" style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-70" style="font-family: MathJax_Main; padding-left: 0.281em;">≤</span><span class="mi" id="MathJax-Span-71" style="font-family: MathJax_Math-italic; padding-left: 0.281em;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.114em;"></span></span><span class="mo" id="MathJax-Span-72" style="font-family: MathJax_Main; padding-left: 0.281em;">≤</span><span class="msubsup" id="MathJax-Span-73" style="padding-left: 0.281em;"><span style="display: inline-block; position: relative; width: 1.447em; height: 0px;"><span style="position: absolute; clip: rect(3.169em, 1000.95em, 4.169em, -999.997em); top: -3.997em; left: 0em;"><span class="mn" id="MathJax-Span-74" style="font-family: MathJax_Main;">10</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span><span style="position: absolute; top: -4.386em; left: 1.003em;"><span class="mn" id="MathJax-Span-75" style="font-size: 70.7%; font-family: MathJax_Main;">4</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.197em; border-left: 0px solid; width: 0px; height: 1.337em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>N</mi><mo>≤</mo><msup><mn>10</mn><mn>4</mn></msup></math></span></span><script type="math/tex" id="MathJax-Element-13">1 \le N \le 10^4</script></li>
+<li class=" mathjax-support"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-14-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mi&gt;D&lt;/mi&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;msup&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-76" style="width: 6.558em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.447em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.114em, 1005.45em, 2.447em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-77"><span class="mn" id="MathJax-Span-78" style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-79" style="font-family: MathJax_Main; padding-left: 0.281em;">≤</span><span class="mi" id="MathJax-Span-80" style="font-family: MathJax_Math-italic; padding-left: 0.281em;">D</span><span class="mo" id="MathJax-Span-81" style="font-family: MathJax_Main; padding-left: 0.281em;">≤</span><span class="msubsup" id="MathJax-Span-82" style="padding-left: 0.281em;"><span style="display: inline-block; position: relative; width: 1.447em; height: 0px;"><span style="position: absolute; clip: rect(3.169em, 1000.95em, 4.169em, -999.997em); top: -3.997em; left: 0em;"><span class="mn" id="MathJax-Span-83" style="font-family: MathJax_Main;">10</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span><span style="position: absolute; top: -4.386em; left: 1.003em;"><span class="mn" id="MathJax-Span-84" style="font-size: 70.7%; font-family: MathJax_Main;">5</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.197em; border-left: 0px solid; width: 0px; height: 1.337em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>D</mi><mo>≤</mo><msup><mn>10</mn><mn>5</mn></msup></math></span></span><script type="math/tex" id="MathJax-Element-14">1 \le D \le 10^5</script></li>
+<li class=" mathjax-support"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-15-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mn&gt;100&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-85" style="width: 6.614em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.503em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1005.45em, 2.503em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-86"><span class="mn" id="MathJax-Span-87" style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-88" style="font-family: MathJax_Main; padding-left: 0.281em;">≤</span><span class="msubsup" id="MathJax-Span-89" style="padding-left: 0.281em;"><span style="display: inline-block; position: relative; width: 0.836em; height: 0px;"><span style="position: absolute; clip: rect(3.392em, 1000.5em, 4.169em, -999.997em); top: -3.997em; left: 0em;"><span class="mi" id="MathJax-Span-90" style="font-family: MathJax_Math-italic;">a</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span><span style="position: absolute; top: -3.831em; left: 0.558em;"><span class="mi" id="MathJax-Span-91" style="font-size: 70.7%; font-family: MathJax_Math-italic;">i</span><span style="display: inline-block; width: 0px; height: 4.003em;"></span></span></span></span><span class="mo" id="MathJax-Span-92" style="font-family: MathJax_Main; padding-left: 0.281em;">≤</span><span class="mn" id="MathJax-Span-93" style="font-family: MathJax_Main; padding-left: 0.281em;">100</span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.263em; border-left: 0px solid; width: 0px; height: 1.137em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><msub><mi>a</mi><mi>i</mi></msub><mo>≤</mo><mn>100</mn></math></span></span><script type="math/tex" id="MathJax-Element-15">1 \le a_i \le 100</script> for each valid <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-16-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-94" style="width: 0.447em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.336em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1000.28em, 2.336em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-95"><span class="mi" id="MathJax-Span-96" style="font-family: MathJax_Math-italic;">i</span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.063em; border-left: 0px solid; width: 0px; height: 0.937em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math></span></span><script type="math/tex" id="MathJax-Element-16">i</script></li>
+</ul>
+<h3 id="subtasks" class=" mathjax-support">Subtasks</h3>
+<p class=" mathjax-support"><strong class=" mathjax-support">Subtask #1 (100 points):</strong> original constraints</p>
+<h3 id="exampleinput" class=" mathjax-support">Example Input</h3>
+<pre class=" mathjax-support"><code class=" mathjax-support">2
+10 1
+10 20 30 40 50 60 90 80 100 1
+5 2
+9 80 27 72 79
+</code></pre>
+<h3 id="exampleoutput" class=" mathjax-support">Example Output</h3>
+<pre class=" mathjax-support"><code class=" mathjax-support">10
+3
+</code></pre>
+<h3 id="explanation" class=" mathjax-support">Explanation</h3>
+<p class=" mathjax-support"><strong class=" mathjax-support">Example case 1:</strong> We do not need to worry about how the people are grouped, since only one person can be vaccinated in a single day. We require as many days as there are people.</p>
+<p class=" mathjax-support"><strong class=" mathjax-support">Example case 2:</strong> There are two people at risk and three people who are not at risk. One optimal strategy is to vaccinate the two people at risk on day <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-17-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-97" style="width: 0.614em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.503em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1000.45em, 2.336em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-98"><span class="mn" id="MathJax-Span-99" style="font-family: MathJax_Main;">1</span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.063em; border-left: 0px solid; width: 0px; height: 0.937em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-17">1</script> and the remaining three on the next <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-18-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-100" style="width: 0.614em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.503em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.336em, 1000.45em, 2.336em, -999.997em); top: -2.164em; left: 0em;"><span class="mrow" id="MathJax-Span-101"><span class="mn" id="MathJax-Span-102" style="font-family: MathJax_Main;">2</span></span><span style="display: inline-block; width: 0px; height: 2.169em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.063em; border-left: 0px solid; width: 0px; height: 0.937em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></span></span><script type="math/tex" id="MathJax-Element-18">2</script> days.</p>
+        
+
+        <!--.problem-statement-->
+
+        <aside class="problem-info mathjax-support">
+          
+          
+          <p class=" mathjax-support">
+            <label class=" mathjax-support">Author:</label>
+            <span class=" mathjax-support"><a href="https://www.codechef.com/users/daanish_adm" data-bindattr-504="504" class=" mathjax-support">daanish_adm</a></span>
+          </p>
+              
+          <p class=" mathjax-support">
+            <label class=" mathjax-support">Date Added:</label>
+            <span class=" mathjax-support">3-12-2020</span>
+          </p>
+          
+          <p class=" mathjax-support">
+            <label class=" mathjax-support">Time Limit:</label>
+            <span class=" mathjax-support">1 secs</span>
+          </p>
+          <p class=" mathjax-support">
+            <label class=" mathjax-support">Source Limit:</label>
+            <span class=" mathjax-support">50000 Bytes</span>
+          </p>
+          <p class=" mathjax-support">
+            <label class=" mathjax-support">Languages:</label>
+            <span class=" mathjax-support">CPP14, C, JAVA, PYTH 3.6, PYTH, CS2, ADA, PYPY, PYP3, TEXT, CPP17, PAS fpc, RUBY, PHP, NODEJS, GO, TCL, HASK, PERL, SCALA, kotlin, BASH, JS, PAS gpc, BF, LISP sbcl, CLOJ, LUA, D, R, CAML, rust, ASM, FORT, FS, LISP clisp, SQL, swift, SCM guile, PERL6, CLPS, WSPC, ERL, ICK, NICE, PRLG, ICON, PIKE, COB, SCM chicken, SCM qobi, ST, NEM, SQLQ</span>
+          </p>
+        </aside>
+        <!--.problem-info-->
+
+        <div class="text-center mathjax-support">
+          <input type="hidden" value="value" data-bindattr-503="503" class=" mathjax-support">
+          
+          <a class="button blue mathjax-support" href="https://www.codechef.com/DEC20B/submit/VACCINE2" data-bindattr-507="507" style="padding:0.4rem 1.5rem 0.425rem;">Submit</a>
+          
+          </div>
+        </div>
+
+      </section>
+      <!--.content-area-->
+
+      <aside class="sidebar small-4 columns pr0">
+        <div class="button-submissions">
+          
+          <a class="button grey" href="https://www.codechef.com/DEC20B/status/VACCINE2,fahadh_333" data-bindattr-508="508">My Submissions</a>
+          <a class="button grey" href="https://www.codechef.com/DEC20B/status/VACCINE2" data-bindattr-509="509">All Submissions</a>
+          
+        </div>
+
+        <div class="successful-submissions widget pb0">
+          <div>
+            <h5 data-ember-action="492"> Successful Submissions
+            <button class="button grey toogle-button fa fa-plus" data-bindattr-493="493"></button>
+            </h5>
+          </div>
+          <div class="content table-component">
+            <div id="rankContentDiv"></div>
+          </div>
+        </div>
+      </aside>
+      <!--.sidebar-->
+
+      <section class="comments" id="problem-comments">
+        <div class="row collapse">
+          <div class="large-12 columns">
+             <div id="ember516" class="ember-view"><section class="cc-comments-section"><div class="comment-topmost-header"><h2 class="noselect cc-comments-title" data-ember-action="517">Comments <i class="fa fa-caret-right"></i></h2></div></section></div> 
+          </div>
+        </div>
+      </section>
+      <!--.comments-->
+
+      
+    </main>
+    <!--.problem-container-->
+  </div>
+  </div></div>
+<script type="text/javascript">
+    String.prototype.capitalize = function () {
+        return this.charAt(0).toUpperCase() + this.slice(1);
+    };
+
+    disconnectOauth = function (event, account) {
+        if (event != undefined) {
+            event.preventDefault();
+        }
+        var r = confirm("Are you sure you want to disconnect " + account.capitalize() + " account?");
+        if (r == true) {
+            window.localStorage.clear();
+            $.ajax({
+                url: '/OAuth/' + account,
+                type: 'DELETE',
+                headers: {'x-csrf-token': window.csrfToken},
+                success: function () {
+                    window.location.reload();
+                },
+                error: function () {
+                    invokeGenericModal({
+                        message: "Couldn't complete your request. Please try again.",
+                        id: account + '-error-message'
+                    });
+                }
+            });
+        }
+    };
+
+    connectOauth = function (event, url) {
+        if (event != undefined) {
+            event.preventDefault();
+        }
+        window.localStorage.clear();
+        cAjax({
+            url: url,
+            type: 'POST',
+            success: function (res) {
+                if (res.url) {
+                    window.location.href = res.url;
+                }
+            },
+            error: function (err) {
+                invokeGenericModal({
+                    areAllAllowed: true,
+                    message: err.message || "Couldn't complete your request. Please try again.",
+                    id: 'oauth-connect-error-message'
+                });
+            }
+        });
+    };
+</script>
+    <footer id="cc-footer-div">
+        <style>
+            .center-desc {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 11px !important;
+            }
+
+            #cc-footer-div {
+                background: #fff;
+                border-top: 2px solid #cbcbcb;
+                padding-top: 55px;
+                font-family: Arial, sans-serif !important;
+                text-align: left !important;
+            }
+
+            .horizontal-list {
+                display: flex;
+                margin-left: 0 !important;
+                padding: 0px !important;
+                margin-bottom: 20px;
+            }
+
+            .horizontal-list li {
+                list-style: none;
+                font-size: 11px !important;
+                padding: 0px 5px 0px 0px !important;
+                height: 12px !important;
+            }
+
+            .horizontal-list li a {
+                color: #4a4a4a !important;
+                font-size: 11px !important;
+                text-decoration: underline;
+            }
+
+            .horizontal-list li a:hover {
+                text-decoration: underline !important;
+            }
+
+            .li-hr {
+                height: 11px;
+                width: 1px;
+                background: #4a4a4a;
+                display: block;
+                align-self: center;
+                margin-right: 5px;
+                position: relative;
+                top: 0.2em;
+            }
+
+            .footer-row {
+                width: 100%;
+                margin: 0 auto;
+                max-width: 950px;
+            }
+
+            .flex-row-footer {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .flex-row-footer p {
+                font-size: 11px !important;
+                color: #4a4a4a !important;
+                margin-bottom: 5px !important;
+            }
+
+            .flex-row-footer p a {
+                color: #4a4a4a !important;
+                text-decoration: underline !important;
+            }
+
+            .flex-row-footer p a:hover {
+                text-decoration: underline !important;
+            }
+
+            .flex-row-footer span {
+                color: #4a4a4a !important;
+                font-size: 11px !important;
+            }
+
+            .footer-uniq-div {
+                color: #4a4a4a !important;
+                font-size: 11px !important;
+                text-align: right;
+            }
+
+            .para-div {
+                margin: 10px 0 0 0 !important;
+            }
+
+            .para-div article h6 {
+                font-weight: 700 !important;
+                font-size: 13px !important;
+                color: #666 !important;
+                margin-bottom: 0 !important;
+            }
+
+            .para-div article h6 a {
+                text-decoration: underline !important;
+                color: #666 !important;
+            }
+
+            .para-div article h6 a:hover {
+                text-decoration: underline !important;
+            }
+
+            .para-div article p {
+                font-size: 12px !important;
+                color: #777 !important;
+                text-align: justify !important;
+                margin-bottom: 5px;
+                line-height: 1.6 !important;
+            }
+
+            .footer-flex-list {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px !important;
+                width: 795px;
+            }
+
+            .footer-flex-list h6 {
+                font-size: 13px !important;
+                font-weight: 700 !important;
+                text-decoration: underline !important;
+                color: #777 !important;
+            }
+
+            .inner-footer-div ul li {
+                list-style: none !important;
+                line-height: 25px !important;
+                padding: 0 !important;
+            }
+
+            .inner-footer-div li a {
+                list-style: none !important;
+                font-size: 12px !important;
+                color: #666 !important;
+                padding: 0 0 5px 0 !important;
+                text-decoration: underline !important;
+            }
+
+            .inner-footer-div li a:hover {
+                text-decoration: underline !important;
+            }
+
+            .inner-footer-div ul {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .inner-footer-div {
+                margin-right: 20px;
+            }
+        </style>
+
+
+        <script language="javascript" type="text/javascript">
+            function savedServerOffset(ts) {
+                ts = ts * 1000;
+                now = Date.now();
+                offset = now - ts;
+                return offset;
+            }
+
+            function formatTime(offset) {
+                ts = Date.now() - offset;
+                now = new Date(ts);
+                localtime = new Date();
+                hour = now.getHours();
+                min = now.getMinutes();
+                sec = now.getSeconds();
+
+                if (min <= 9) {
+                    min = "0" + min;
+                }
+                if (sec <= 9) {
+                    sec = "0" + sec;
+                }
+                if (hour > 12) {
+                    hour = hour - 12;
+                    add = " PM";
+                } else {
+                    hour = hour;
+                    add = " AM";
+                }
+                if (hour == 12) {
+                    add = " PM";
+                }
+                if (hour == 00) {
+                    hour = "12";
+                }
+
+                $('#server-time').html(((hour <= 9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+
+                nextSec = (now.getTime() + 1000);
+
+                setTimeout("formatTime(" + offset + ")", 1000);
+            }
+
+            function getDtTimeZone() {
+                var rightNow = new Date();
+                var toDay = new Date(rightNow.getFullYear(), 0, 1, 0, 0, 0, 0);
+                var temp = toDay.toGMTString();
+                var date2 = new Date(temp.substring(0, temp.lastIndexOf(" ") - 1));
+                var stdTime = (toDay - date2) / (1000 * 60 * 60);
+                return stdTime;
+            }
+        </script>
+        <div class="footer-row">
+            <p class="center-desc"><u>CodeChef is a competitive programming community</u></p>
+        </div>
+        <div class="footer-row flex-row-footer">
+            <div>
+                <ul class="horizontal-list">
+                    <li><a href="https://www.codechef.com/aboutus/">About CodeChef</a></li>
+                    <div class="li-hr"></div>
+                    <li><a href="https://www.codechef.com/contactus">Contact Us</a></li>
+                </ul>
+                <p>CodeChef uses SPOJ © by <a href="https://www.sphere-research.com/" target="_blank">Sphere
+                        Research
+                        Labs</a><br>In order to report copyright violations of any kind, send in an email to <a href="mailto:copyright@codechef.com">copyright@codechef.com</a></p>
+            </div>
+
+            <div>
+                <div class="footer-uniq-div">The time now is: <span id="server-time">05:00:13 PM</span><br>
+                    <span>Your IP: <span>157.48.205.243</span></span>
+                    <script language="javascript">formatTime(savedServerOffset('1607599741'));</script>                </div>
+            </div>
+        </div>
+        <div class="footer-row">
+            <div class="para-div">
+                <article>
+                    <h6><a href="https://www.codechef.com/">CodeChef</a> - A Platform for Aspiring Programmers</h6>
+                    <p>CodeChef was created as a platform to help programmers make it big in the world of
+                        <strong>algorithms</strong>, <strong>computer programming</strong>, and <strong>programming
+                            contests</strong>. At CodeChef we work hard to revive the geek in you by hosting a
+                        <strong>programming
+                            contest</strong> at the start of the month and two smaller programming challenges at the
+                        middle and
+                        end of the month. We also aim to have training sessions and discussions related to
+                        <strong>algorithms</strong>, <strong>binary search</strong>, technicalities like <strong>array
+                            size</strong> and the likes. Apart from providing a platform for <strong>programming
+                            competitions</strong>, CodeChef also has various algorithm tutorials and forum
+                        discussions
+                        to help
+                        those who are new to the world of <strong>computer programming</strong>.</p>
+                </article>
+
+                <article>
+                    <h6><a href="https://www.codechef.com/problems/easy">Practice Section</a> - A Place to hone your 'Computer Programming
+                        Skills'</h6>
+                    <p>Try your hand at one of our many practice problems and submit your solution in the language
+                        of
+                        your
+                        choice. Our <strong>programming contest</strong> judge accepts solutions in over 55+
+                        programming
+                        languages. Preparing for coding contests were never this much fun! Receive points, and move
+                        up
+                        through
+                        the CodeChef ranks. Use our practice section to better prepare yourself for the multiple
+                        <strong>programming
+                            challenges</strong> that take place through-out the month on CodeChef.</p>
+                </article>
+
+                <article>
+                    <h6><a href="https://www.codechef.com/contests">Compete</a> - Monthly Programming Contests, Cook-off and Lunchtime</h6>
+                    <p>Here is where you can show off your <strong>computer programming skills</strong>. Take part
+                        in
+                        our 10
+                        days long monthly coding contest and the shorter format Cook-off and Lunchtime <strong>coding
+                            contests</strong>. Put yourself up for recognition and win great prizes. Our <strong>programming
+                            contests</strong> have prizes worth up to INR 20,000 (for Indian Community), $700 (for
+                        Global
+                        Community) and lots more CodeChef goodies up for grabs.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="footer-row">
+            <div class="footer-flex-list">
+                <div class="inner-footer-div">
+                    <h6>Programming Tools</h6>
+                    <ul>
+                        <li><a href="https://www.codechef.com/ide">Online IDE</a></li>
+                        <li><a href="https://www.codechef.com/contests#future-contests">Upcoming Coding Contests</a></li>
+                        <li><a href="https://www.codechef.com/hostyourcontest">Contest Hosting</a></li>
+                        <li><a href="https://www.codechef.com/problemsetting">Problem Setting</a></li>
+                        <li><a href="https://www.codechef.com/wiki/tutorials">CodeChef Tutorials</a></li>
+                        <li><a href="https://www.codechef.com/wiki">CodeChef Wiki</a></li>
+                    </ul>
+                </div>
+
+                <div class="inner-footer-div">
+                    <h6>Practice Problems</h6>
+                    <ul>
+                        <li><a href="https://www.codechef.com/problems/easy">Easy</a></li>
+                        <li><a href="https://www.codechef.com/problems/medium">Medium</a></li>
+                        <li><a href="https://www.codechef.com/problems/hard">Hard</a></li>
+                        <li><a href="https://www.codechef.com/problems/challenge">Challenge</a></li>
+                        <li><a href="https://www.codechef.com/problems/extcontest">Peer</a></li>
+                        <li><a href="https://www.codechef.com/problems/school">School</a></li>
+                        <li><a href="https://www.codechef.com/wiki/faq">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div class="inner-footer-div">
+                    <h6>Initiatives</h6>
+                    <ul class="">
+                        <li><a href="https://www.codechef.com/goforgold">Go for Gold</a></li>
+                        <li><a href="https://www.codechef.com/school">CodeChef for Schools</a></li>
+                        <li><a href="https://www.codechef.com/college-chapters">College Chapters</a></li>
+                        <li><a href="https://business.codechef.com/">CodeChef for Business</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="inner-footer-div">
+                    <h6>Policy</h6>
+                    <ul>
+                        <li><a href="https://www.codechef.com/terms">Terms of Service</a></li>
+                        <li><a href="https://www.codechef.com/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="https://www.codechef.com/refund-policy">Refund Policy</a></li>
+                        <li><a href="https://www.codechef.com/codeofconduct">Code of Conduct</a></li>
+                        <li><a href="https://www.codechef.com/bug-bounty-program">Bug Bounty Program</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-53602-42']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+        <!-- Start Alexa Certify Javascript -->
+        <script type="text/javascript">
+            _atrk_opts = {
+                atrk_acct: "q16Cj1a8gN00iz",
+                domain: "codechef.com",
+                dynamic: true
+            };
+            (function () {
+                var as = document.createElement('script');
+                as.type = 'text/javascript';
+                as.async = true;
+                as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js";
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(as, s);
+            })();
+        </script>
+        <noscript>
+            <img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=q16Cj1a8gN00iz" style="display:none"
+                 height="1" width="1"
+                 alt=""/>
+        </noscript>
+        <!-- End Alexa Certify Javascript -->
+    </footer>
+
+<div id="gdpr-cookie-notif" style="width: 100%; padding-top: 5px; padding-bottom: 5px; display: none;" class="global--announcement">
+  <div class="global--announcement__content">
+    <p>We use cookies to improve your experience and for analytical purposes. Read our <a href="https://www.codechef.com/privacy-policy">Privacy Policy</a> and <a href="https://www.codechef.com/terms">Terms</a> to know more. You consent to our cookies if you continue to use our website.</p>
+  </div>
+  <div style="margin-right: 30px;">
+    <button id="gdpr-i-love-cookies" class="button grey">Okay</button>
+  </div>
+</div>
+<script>
+  var sscache = {};
+
+  function getPage(url, data, page) {
+    var cacheId = url + JSON.stringify(data);
+    var cache = sscache;
+    var success = function (data) {
+      cache[cacheId] = data;
+      $('#rankContentDiv').html(data['content']);
+      var newpage = page === undefined ? 1 : (parseInt(page) + 1);
+      var pageinfo = "<div align='center' class='pageinfo'> - </div>";
+      if (data['max_page'] > 0) {
+        pageinfo = "<div align='center' class='pageinfo'>" + newpage + " of " + data['max_page'] + "</div>";
+      }
+      $("#loader").html(pageinfo);
+
+    };
+
+    var error = function (request, errorType) {
+      try {
+        if (page === undefined) {
+          retryButton = '<input id="retryButton" type="button" value="Retry"/>';
+          $('#rankContentDiv').html(retryButton);
+          $('#retryButton').click(function () {
+            $('#rankContentDiv').html('<p align="center"><img src="/sites/all/themes/abessive/images/ajax-loader.gif" /> Fetching content</p>');
+            getPage(url, data, page);
+          });
+        } else {
+          $("#loader").html("Oops! It couldn't load. Try again.");
+        }
+      } catch (e) {
+      }
+    };
+
+    if (cache.hasOwnProperty(cacheId)) {
+      success(cache[cacheId]);
+      return;
+    }
+
+    cAjax({
+      url: url,
+      type: "GET",
+      data: data,
+      cache: false,
+      timeout: 10000,
+      dataType: "json",
+      success: success,
+      error: error
+    });
+
+  }
+
+
+  function set_page(element) {
+    var page;
+
+    if (element == "prev")
+      page = $("#prev_p").val();
+    else if (element == "next")
+      page = $("#next_p").val();
+
+    return page;
+  }
+
+  function onload_getpage_ssubmissions(element) {
+    $('#loader').html('<p><img src="/misc/ajax_loader_d.gif" style="width: 120px; height:15px;"/></p>');
+    var contest = "";
+    if ($("#ccode").length != 0) {
+      contest = '&ccode=' + $("#ccode").val();
+    }
+
+    var page = set_page(element);
+    var data = "page=" + page + "&pcode=" + $("#pcode").val() + contest;
+    var url = "/ssubmission/prob";
+    getPage(url, data, page);
+  }
+</script>
+
+<script>
+  $(document).ready(function () {
+    var cookie_name = 'i-love-cookies';
+    show_hide_cookie_notification(cookie_name);
+    $('#gdpr-i-love-cookies').click(function () {
+        cCookie(cookie_name,"yes",{expires:30, path:"/", secure: true});
+        show_hide_cookie_notification(cookie_name);
+    });
+
+    function show_hide_cookie_notification(cookie_name) {
+      var value = cCookie(cookie_name);
+      if (value == 'yes') {
+        $('#gdpr-cookie-notif').fadeOut();
+      } else {
+        $('#gdpr-cookie-notif').fadeIn();
+      }
+    }
+
+  });
+</script>
+
+
+
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Vaccine Distribution _ CodeChef_files/widget_iframe.96fd96193cc66c3e11d4c5e4c7c7ec97.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Vaccine Distribution _ CodeChef_files/saved_resource.html"></iframe><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; min-width: 0px; max-width: none; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: MathJax_Main, sans-serif;"></div></div></body></html>
